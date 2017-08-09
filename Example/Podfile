@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'iOSKickStart_Example' do
+  pod 'iOSKickStart', :path => '../'
+
+  target 'iOSKickStart_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
