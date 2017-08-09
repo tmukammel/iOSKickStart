@@ -22,7 +22,7 @@ pod "iOSKickStart"
 
 ## Author
 
-Twaha Mukammel, t.mukammel@gmail.com
+Twaha Mukammel, t.mukammel@aol.com
 
 ## License
 
