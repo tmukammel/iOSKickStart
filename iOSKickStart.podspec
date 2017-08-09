@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'iOSKickStart'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Set of extended standard features to kickstart any iOS project.'
 
 # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ Current Features:
 2. UIColor init with hex value.
 3. UIView corner-radius and colored-border IBInspectables.
 4. Text localization with key string from interface builder.
-5. Define once user everywhere global constants.
+5. Define once use everywhere global constants.
 6. Navigationbar set solid color and line shadow visibility on/off.
 7. Scrollview input form by just enabling actAsInputForm in interface builder. Use Scrollview's customFirstRespnder property to focus on specif view over keyboard.
 8. Dismiss keyboard on tap with enabling UIView extension var endEditingOnTap.
@@ -35,7 +35,7 @@ Current Features:
 Limitations:
 1. You have to extend or use sub classes declared here against Apple's base classes.
 
-THis is just a basic work. Please contribute, expand and Enjoy...
+This is just a basic work. Please contribute, expand and Enjoy...
                        DESC
 
   s.homepage         = 'https://github.com/tmukammel/iOSKickStart'

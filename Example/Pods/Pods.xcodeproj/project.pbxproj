@@ -16,31 +16,31 @@
 		A30C30DDCBAA420FABBE06FD320A2009 /* Pods-iOSKickStart_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 87BC11B4C32DBC684EFF56B084B419D5 /* Pods-iOSKickStart_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D97E7EF70D6C8C8B1F711F7580D4D075 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		DD346B6A1B032D4A06BB4FAA4AF9D5E5 /* Pods-iOSKickStart_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CF9EA3D545D987B2F6A4E0B8FE8E1E /* Pods-iOSKickStart_Example-dummy.m */; };
-		F7597EBC1F3BB3E500AF2A51 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597EBB1F3BB3E500AF2A51 /* GlobalConstants.swift */; };
-		F7597EC81F3BB3FA00AF2A51 /* NSBundle+Language.h in Headers */ = {isa = PBXBuildFile; fileRef = F7597EBD1F3BB3FA00AF2A51 /* NSBundle+Language.h */; };
-		F7597EC91F3BB3FA00AF2A51 /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = F7597EBE1F3BB3FA00AF2A51 /* NSBundle+Language.m */; };
-		F7597ECA1F3BB3FA00AF2A51 /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597EBF1F3BB3FA00AF2A51 /* UINavigationController+Extension.swift */; };
-		F7597ECB1F3BB3FA00AF2A51 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597EC01F3BB3FA00AF2A51 /* UIViewController+Extension.swift */; };
-		F7597ECC1F3BB3FA00AF2A51 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597EC11F3BB3FA00AF2A51 /* UIColor+Extension.swift */; };
-		F7597ECD1F3BB3FA00AF2A51 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597EC21F3BB3FA00AF2A51 /* UIView+Extension.swift */; };
-		F7597ECE1F3BB3FA00AF2A51 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597EC31F3BB3FA00AF2A51 /* UIButton+Extension.swift */; };
-		F7597ECF1F3BB3FA00AF2A51 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597EC41F3BB3FA00AF2A51 /* UILabel+Extension.swift */; };
-		F7597ED01F3BB3FA00AF2A51 /* UIProgressView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597EC51F3BB3FA00AF2A51 /* UIProgressView+Extension.swift */; };
-		F7597ED11F3BB3FA00AF2A51 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597EC61F3BB3FA00AF2A51 /* UITextField+Extension.swift */; };
-		F7597ED21F3BB3FA00AF2A51 /* UIScrollView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597EC71F3BB3FA00AF2A51 /* UIScrollView+Extension.swift */; };
-		F7597EE01F3BB40B00AF2A51 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597ED31F3BB40B00AF2A51 /* NavigationController.swift */; };
-		F7597EE11F3BB40B00AF2A51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597ED41F3BB40B00AF2A51 /* ViewController.swift */; };
-		F7597EE21F3BB40B00AF2A51 /* CrossDissolveSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597ED51F3BB40B00AF2A51 /* CrossDissolveSegue.swift */; };
-		F7597EE31F3BB40B00AF2A51 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597ED61F3BB40B00AF2A51 /* TabBarController.swift */; };
-		F7597EE41F3BB40B00AF2A51 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597ED71F3BB40B00AF2A51 /* TabBarItem.swift */; };
-		F7597EE51F3BB40B00AF2A51 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597ED81F3BB40B00AF2A51 /* View.swift */; };
-		F7597EE61F3BB40B00AF2A51 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597ED91F3BB40B00AF2A51 /* Button.swift */; };
-		F7597EE71F3BB40B00AF2A51 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597EDA1F3BB40B00AF2A51 /* Label.swift */; };
-		F7597EE81F3BB40B00AF2A51 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597EDB1F3BB40B00AF2A51 /* ProgressView.swift */; };
-		F7597EE91F3BB40B00AF2A51 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597EDC1F3BB40B00AF2A51 /* ImageView.swift */; };
-		F7597EEA1F3BB40B00AF2A51 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597EDD1F3BB40B00AF2A51 /* Image.swift */; };
-		F7597EEB1F3BB40B00AF2A51 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597EDE1F3BB40B00AF2A51 /* TextField.swift */; };
-		F7597EEC1F3BB40B00AF2A51 /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597EDF1F3BB40B00AF2A51 /* ScrollView.swift */; };
+		F7597EF01F3BCEDD00AF2A51 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597EEF1F3BCEDD00AF2A51 /* GlobalConstants.swift */; };
+		F7597EFC1F3BCF3800AF2A51 /* NSBundle+Language.h in Headers */ = {isa = PBXBuildFile; fileRef = F7597EF11F3BCF3800AF2A51 /* NSBundle+Language.h */; };
+		F7597EFD1F3BCF3800AF2A51 /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = F7597EF21F3BCF3800AF2A51 /* NSBundle+Language.m */; };
+		F7597EFE1F3BCF3800AF2A51 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597EF31F3BCF3800AF2A51 /* UIButton+Extension.swift */; };
+		F7597EFF1F3BCF3800AF2A51 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597EF41F3BCF3800AF2A51 /* UIColor+Extension.swift */; };
+		F7597F001F3BCF3800AF2A51 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597EF51F3BCF3800AF2A51 /* UILabel+Extension.swift */; };
+		F7597F011F3BCF3800AF2A51 /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597EF61F3BCF3800AF2A51 /* UINavigationController+Extension.swift */; };
+		F7597F021F3BCF3800AF2A51 /* UIProgressView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597EF71F3BCF3800AF2A51 /* UIProgressView+Extension.swift */; };
+		F7597F031F3BCF3800AF2A51 /* UIScrollView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597EF81F3BCF3800AF2A51 /* UIScrollView+Extension.swift */; };
+		F7597F041F3BCF3800AF2A51 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597EF91F3BCF3800AF2A51 /* UITextField+Extension.swift */; };
+		F7597F051F3BCF3800AF2A51 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597EFA1F3BCF3800AF2A51 /* UIView+Extension.swift */; };
+		F7597F061F3BCF3800AF2A51 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597EFB1F3BCF3800AF2A51 /* UIViewController+Extension.swift */; };
+		F7597F141F3BCF6800AF2A51 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597F071F3BCF6800AF2A51 /* Button.swift */; };
+		F7597F151F3BCF6800AF2A51 /* CrossDissolveSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597F081F3BCF6800AF2A51 /* CrossDissolveSegue.swift */; };
+		F7597F161F3BCF6800AF2A51 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597F091F3BCF6800AF2A51 /* Image.swift */; };
+		F7597F171F3BCF6800AF2A51 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597F0A1F3BCF6800AF2A51 /* ImageView.swift */; };
+		F7597F181F3BCF6800AF2A51 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597F0B1F3BCF6800AF2A51 /* Label.swift */; };
+		F7597F191F3BCF6800AF2A51 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597F0C1F3BCF6800AF2A51 /* NavigationController.swift */; };
+		F7597F1A1F3BCF6800AF2A51 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597F0D1F3BCF6800AF2A51 /* ProgressView.swift */; };
+		F7597F1B1F3BCF6800AF2A51 /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597F0E1F3BCF6800AF2A51 /* ScrollView.swift */; };
+		F7597F1C1F3BCF6800AF2A51 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597F0F1F3BCF6800AF2A51 /* TabBarController.swift */; };
+		F7597F1D1F3BCF6800AF2A51 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597F101F3BCF6800AF2A51 /* TabBarItem.swift */; };
+		F7597F1E1F3BCF6800AF2A51 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597F111F3BCF6800AF2A51 /* TextField.swift */; };
+		F7597F1F1F3BCF6800AF2A51 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597F121F3BCF6800AF2A51 /* View.swift */; };
+		F7597F201F3BCF6800AF2A51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597F131F3BCF6800AF2A51 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,31 +84,31 @@
 		E2D2DC8FAEB741863677EA13909C50B6 /* Pods_iOSKickStart_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSKickStart_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E50F58D7D2332C7E16021671C604FF1B /* Pods-iOSKickStart_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-iOSKickStart_Example.modulemap"; sourceTree = "<group>"; };
 		F4CF9EA3D545D987B2F6A4E0B8FE8E1E /* Pods-iOSKickStart_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iOSKickStart_Example-dummy.m"; sourceTree = "<group>"; };
-		F7597EBB1F3BB3E500AF2A51 /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
-		F7597EBD1F3BB3FA00AF2A51 /* NSBundle+Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Language.h"; sourceTree = "<group>"; };
-		F7597EBE1F3BB3FA00AF2A51 /* NSBundle+Language.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Language.m"; sourceTree = "<group>"; };
-		F7597EBF1F3BB3FA00AF2A51 /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
-		F7597EC01F3BB3FA00AF2A51 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
-		F7597EC11F3BB3FA00AF2A51 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
-		F7597EC21F3BB3FA00AF2A51 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
-		F7597EC31F3BB3FA00AF2A51 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
-		F7597EC41F3BB3FA00AF2A51 /* UILabel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
-		F7597EC51F3BB3FA00AF2A51 /* UIProgressView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIProgressView+Extension.swift"; sourceTree = "<group>"; };
-		F7597EC61F3BB3FA00AF2A51 /* UITextField+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
-		F7597EC71F3BB3FA00AF2A51 /* UIScrollView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extension.swift"; sourceTree = "<group>"; };
-		F7597ED31F3BB40B00AF2A51 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
-		F7597ED41F3BB40B00AF2A51 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F7597ED51F3BB40B00AF2A51 /* CrossDissolveSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrossDissolveSegue.swift; sourceTree = "<group>"; };
-		F7597ED61F3BB40B00AF2A51 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		F7597ED71F3BB40B00AF2A51 /* TabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
-		F7597ED81F3BB40B00AF2A51 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
-		F7597ED91F3BB40B00AF2A51 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
-		F7597EDA1F3BB40B00AF2A51 /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
-		F7597EDB1F3BB40B00AF2A51 /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
-		F7597EDC1F3BB40B00AF2A51 /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
-		F7597EDD1F3BB40B00AF2A51 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
-		F7597EDE1F3BB40B00AF2A51 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
-		F7597EDF1F3BB40B00AF2A51 /* ScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
+		F7597EEF1F3BCEDD00AF2A51 /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalConstants.swift; path = iOSKickStart/Classes/GlobalConstants.swift; sourceTree = "<group>"; };
+		F7597EF11F3BCF3800AF2A51 /* NSBundle+Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSBundle+Language.h"; path = "iOSKickStart/Classes/NSBundle+Language.h"; sourceTree = "<group>"; };
+		F7597EF21F3BCF3800AF2A51 /* NSBundle+Language.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+Language.m"; path = "iOSKickStart/Classes/NSBundle+Language.m"; sourceTree = "<group>"; };
+		F7597EF31F3BCF3800AF2A51 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIButton+Extension.swift"; path = "iOSKickStart/Classes/UIButton+Extension.swift"; sourceTree = "<group>"; };
+		F7597EF41F3BCF3800AF2A51 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+Extension.swift"; path = "iOSKickStart/Classes/UIColor+Extension.swift"; sourceTree = "<group>"; };
+		F7597EF51F3BCF3800AF2A51 /* UILabel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UILabel+Extension.swift"; path = "iOSKickStart/Classes/UILabel+Extension.swift"; sourceTree = "<group>"; };
+		F7597EF61F3BCF3800AF2A51 /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UINavigationController+Extension.swift"; path = "iOSKickStart/Classes/UINavigationController+Extension.swift"; sourceTree = "<group>"; };
+		F7597EF71F3BCF3800AF2A51 /* UIProgressView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIProgressView+Extension.swift"; path = "iOSKickStart/Classes/UIProgressView+Extension.swift"; sourceTree = "<group>"; };
+		F7597EF81F3BCF3800AF2A51 /* UIScrollView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIScrollView+Extension.swift"; path = "iOSKickStart/Classes/UIScrollView+Extension.swift"; sourceTree = "<group>"; };
+		F7597EF91F3BCF3800AF2A51 /* UITextField+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITextField+Extension.swift"; path = "iOSKickStart/Classes/UITextField+Extension.swift"; sourceTree = "<group>"; };
+		F7597EFA1F3BCF3800AF2A51 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Extension.swift"; path = "iOSKickStart/Classes/UIView+Extension.swift"; sourceTree = "<group>"; };
+		F7597EFB1F3BCF3800AF2A51 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+Extension.swift"; path = "iOSKickStart/Classes/UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		F7597F071F3BCF6800AF2A51 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Button.swift; path = iOSKickStart/Classes/Button.swift; sourceTree = "<group>"; };
+		F7597F081F3BCF6800AF2A51 /* CrossDissolveSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CrossDissolveSegue.swift; path = iOSKickStart/Classes/CrossDissolveSegue.swift; sourceTree = "<group>"; };
+		F7597F091F3BCF6800AF2A51 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Image.swift; path = iOSKickStart/Classes/Image.swift; sourceTree = "<group>"; };
+		F7597F0A1F3BCF6800AF2A51 /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageView.swift; path = iOSKickStart/Classes/ImageView.swift; sourceTree = "<group>"; };
+		F7597F0B1F3BCF6800AF2A51 /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Label.swift; path = iOSKickStart/Classes/Label.swift; sourceTree = "<group>"; };
+		F7597F0C1F3BCF6800AF2A51 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationController.swift; path = iOSKickStart/Classes/NavigationController.swift; sourceTree = "<group>"; };
+		F7597F0D1F3BCF6800AF2A51 /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgressView.swift; path = iOSKickStart/Classes/ProgressView.swift; sourceTree = "<group>"; };
+		F7597F0E1F3BCF6800AF2A51 /* ScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScrollView.swift; path = iOSKickStart/Classes/ScrollView.swift; sourceTree = "<group>"; };
+		F7597F0F1F3BCF6800AF2A51 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = iOSKickStart/Classes/TabBarController.swift; sourceTree = "<group>"; };
+		F7597F101F3BCF6800AF2A51 /* TabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarItem.swift; path = iOSKickStart/Classes/TabBarItem.swift; sourceTree = "<group>"; };
+		F7597F111F3BCF6800AF2A51 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextField.swift; path = iOSKickStart/Classes/TextField.swift; sourceTree = "<group>"; };
+		F7597F121F3BCF6800AF2A51 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = View.swift; path = iOSKickStart/Classes/View.swift; sourceTree = "<group>"; };
+		F7597F131F3BCF6800AF2A51 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = iOSKickStart/Classes/ViewController.swift; sourceTree = "<group>"; };
 		F8EB47BC36A20C7022E01D00BD96107D /* Pods-iOSKickStart_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-iOSKickStart_Tests.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -259,7 +259,7 @@
 		F7597EB81F3BB31600AF2A51 /* Global Access */ = {
 			isa = PBXGroup;
 			children = (
-				F7597EBB1F3BB3E500AF2A51 /* GlobalConstants.swift */,
+				F7597EEF1F3BCEDD00AF2A51 /* GlobalConstants.swift */,
 			);
 			name = "Global Access";
 			sourceTree = "<group>";
@@ -267,17 +267,17 @@
 		F7597EB91F3BB33600AF2A51 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				F7597EBD1F3BB3FA00AF2A51 /* NSBundle+Language.h */,
-				F7597EBE1F3BB3FA00AF2A51 /* NSBundle+Language.m */,
-				F7597EBF1F3BB3FA00AF2A51 /* UINavigationController+Extension.swift */,
-				F7597EC01F3BB3FA00AF2A51 /* UIViewController+Extension.swift */,
-				F7597EC11F3BB3FA00AF2A51 /* UIColor+Extension.swift */,
-				F7597EC21F3BB3FA00AF2A51 /* UIView+Extension.swift */,
-				F7597EC31F3BB3FA00AF2A51 /* UIButton+Extension.swift */,
-				F7597EC41F3BB3FA00AF2A51 /* UILabel+Extension.swift */,
-				F7597EC51F3BB3FA00AF2A51 /* UIProgressView+Extension.swift */,
-				F7597EC61F3BB3FA00AF2A51 /* UITextField+Extension.swift */,
-				F7597EC71F3BB3FA00AF2A51 /* UIScrollView+Extension.swift */,
+				F7597EF11F3BCF3800AF2A51 /* NSBundle+Language.h */,
+				F7597EF21F3BCF3800AF2A51 /* NSBundle+Language.m */,
+				F7597EF31F3BCF3800AF2A51 /* UIButton+Extension.swift */,
+				F7597EF41F3BCF3800AF2A51 /* UIColor+Extension.swift */,
+				F7597EF51F3BCF3800AF2A51 /* UILabel+Extension.swift */,
+				F7597EF61F3BCF3800AF2A51 /* UINavigationController+Extension.swift */,
+				F7597EF71F3BCF3800AF2A51 /* UIProgressView+Extension.swift */,
+				F7597EF81F3BCF3800AF2A51 /* UIScrollView+Extension.swift */,
+				F7597EF91F3BCF3800AF2A51 /* UITextField+Extension.swift */,
+				F7597EFA1F3BCF3800AF2A51 /* UIView+Extension.swift */,
+				F7597EFB1F3BCF3800AF2A51 /* UIViewController+Extension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -285,19 +285,19 @@
 		F7597EBA1F3BB34900AF2A51 /* Generic Subclasses */ = {
 			isa = PBXGroup;
 			children = (
-				F7597ED31F3BB40B00AF2A51 /* NavigationController.swift */,
-				F7597ED41F3BB40B00AF2A51 /* ViewController.swift */,
-				F7597ED51F3BB40B00AF2A51 /* CrossDissolveSegue.swift */,
-				F7597ED61F3BB40B00AF2A51 /* TabBarController.swift */,
-				F7597ED71F3BB40B00AF2A51 /* TabBarItem.swift */,
-				F7597ED81F3BB40B00AF2A51 /* View.swift */,
-				F7597ED91F3BB40B00AF2A51 /* Button.swift */,
-				F7597EDA1F3BB40B00AF2A51 /* Label.swift */,
-				F7597EDB1F3BB40B00AF2A51 /* ProgressView.swift */,
-				F7597EDC1F3BB40B00AF2A51 /* ImageView.swift */,
-				F7597EDD1F3BB40B00AF2A51 /* Image.swift */,
-				F7597EDE1F3BB40B00AF2A51 /* TextField.swift */,
-				F7597EDF1F3BB40B00AF2A51 /* ScrollView.swift */,
+				F7597F071F3BCF6800AF2A51 /* Button.swift */,
+				F7597F081F3BCF6800AF2A51 /* CrossDissolveSegue.swift */,
+				F7597F091F3BCF6800AF2A51 /* Image.swift */,
+				F7597F0A1F3BCF6800AF2A51 /* ImageView.swift */,
+				F7597F0B1F3BCF6800AF2A51 /* Label.swift */,
+				F7597F0C1F3BCF6800AF2A51 /* NavigationController.swift */,
+				F7597F0D1F3BCF6800AF2A51 /* ProgressView.swift */,
+				F7597F0E1F3BCF6800AF2A51 /* ScrollView.swift */,
+				F7597F0F1F3BCF6800AF2A51 /* TabBarController.swift */,
+				F7597F101F3BCF6800AF2A51 /* TabBarItem.swift */,
+				F7597F111F3BCF6800AF2A51 /* TextField.swift */,
+				F7597F121F3BCF6800AF2A51 /* View.swift */,
+				F7597F131F3BCF6800AF2A51 /* ViewController.swift */,
 			);
 			name = "Generic Subclasses";
 			sourceTree = "<group>";
@@ -318,7 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				83FFF55EFCE75FEAED5E282D6D9A4ACB /* iOSKickStart-umbrella.h in Headers */,
-				F7597EC81F3BB3FA00AF2A51 /* NSBundle+Language.h in Headers */,
+				F7597EFC1F3BCF3800AF2A51 /* NSBundle+Language.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,31 +439,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7597EBC1F3BB3E500AF2A51 /* GlobalConstants.swift in Sources */,
-				F7597EE31F3BB40B00AF2A51 /* TabBarController.swift in Sources */,
-				F7597EEA1F3BB40B00AF2A51 /* Image.swift in Sources */,
-				F7597EEB1F3BB40B00AF2A51 /* TextField.swift in Sources */,
-				F7597ECD1F3BB3FA00AF2A51 /* UIView+Extension.swift in Sources */,
+				F7597F201F3BCF6800AF2A51 /* ViewController.swift in Sources */,
+				F7597F031F3BCF3800AF2A51 /* UIScrollView+Extension.swift in Sources */,
+				F7597EFF1F3BCF3800AF2A51 /* UIColor+Extension.swift in Sources */,
+				F7597F1E1F3BCF6800AF2A51 /* TextField.swift in Sources */,
+				F7597EFE1F3BCF3800AF2A51 /* UIButton+Extension.swift in Sources */,
 				8EE807FD2EC2AD22829F60E98FDC9417 /* iOSKickStart-dummy.m in Sources */,
-				F7597EE91F3BB40B00AF2A51 /* ImageView.swift in Sources */,
-				F7597EC91F3BB3FA00AF2A51 /* NSBundle+Language.m in Sources */,
-				F7597EE61F3BB40B00AF2A51 /* Button.swift in Sources */,
-				F7597EE11F3BB40B00AF2A51 /* ViewController.swift in Sources */,
-				F7597ECC1F3BB3FA00AF2A51 /* UIColor+Extension.swift in Sources */,
-				F7597ED01F3BB3FA00AF2A51 /* UIProgressView+Extension.swift in Sources */,
-				F7597EE41F3BB40B00AF2A51 /* TabBarItem.swift in Sources */,
-				F7597ED11F3BB3FA00AF2A51 /* UITextField+Extension.swift in Sources */,
-				F7597EE81F3BB40B00AF2A51 /* ProgressView.swift in Sources */,
-				F7597ED21F3BB3FA00AF2A51 /* UIScrollView+Extension.swift in Sources */,
-				F7597EE01F3BB40B00AF2A51 /* NavigationController.swift in Sources */,
-				F7597ECE1F3BB3FA00AF2A51 /* UIButton+Extension.swift in Sources */,
-				F7597ECB1F3BB3FA00AF2A51 /* UIViewController+Extension.swift in Sources */,
-				F7597EE51F3BB40B00AF2A51 /* View.swift in Sources */,
-				F7597ECA1F3BB3FA00AF2A51 /* UINavigationController+Extension.swift in Sources */,
-				F7597ECF1F3BB3FA00AF2A51 /* UILabel+Extension.swift in Sources */,
-				F7597EE71F3BB40B00AF2A51 /* Label.swift in Sources */,
-				F7597EEC1F3BB40B00AF2A51 /* ScrollView.swift in Sources */,
-				F7597EE21F3BB40B00AF2A51 /* CrossDissolveSegue.swift in Sources */,
+				F7597F1D1F3BCF6800AF2A51 /* TabBarItem.swift in Sources */,
+				F7597F161F3BCF6800AF2A51 /* Image.swift in Sources */,
+				F7597F011F3BCF3800AF2A51 /* UINavigationController+Extension.swift in Sources */,
+				F7597F1F1F3BCF6800AF2A51 /* View.swift in Sources */,
+				F7597F151F3BCF6800AF2A51 /* CrossDissolveSegue.swift in Sources */,
+				F7597F001F3BCF3800AF2A51 /* UILabel+Extension.swift in Sources */,
+				F7597F171F3BCF6800AF2A51 /* ImageView.swift in Sources */,
+				F7597F061F3BCF3800AF2A51 /* UIViewController+Extension.swift in Sources */,
+				F7597F021F3BCF3800AF2A51 /* UIProgressView+Extension.swift in Sources */,
+				F7597EFD1F3BCF3800AF2A51 /* NSBundle+Language.m in Sources */,
+				F7597EF01F3BCEDD00AF2A51 /* GlobalConstants.swift in Sources */,
+				F7597F1B1F3BCF6800AF2A51 /* ScrollView.swift in Sources */,
+				F7597F191F3BCF6800AF2A51 /* NavigationController.swift in Sources */,
+				F7597F051F3BCF3800AF2A51 /* UIView+Extension.swift in Sources */,
+				F7597F181F3BCF6800AF2A51 /* Label.swift in Sources */,
+				F7597F1A1F3BCF6800AF2A51 /* ProgressView.swift in Sources */,
+				F7597F1C1F3BCF6800AF2A51 /* TabBarController.swift in Sources */,
+				F7597F141F3BCF6800AF2A51 /* Button.swift in Sources */,
+				F7597F041F3BCF3800AF2A51 /* UITextField+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
