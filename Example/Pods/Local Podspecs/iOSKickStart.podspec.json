@@ -1,0 +1,22 @@
+{
+  "name": "iOSKickStart",
+  "version": "0.1.0",
+  "summary": "A short description of iOSKickStart.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Twaha Mukammel/iOSKickStart",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Twaha Mukammel": "t.mukammel@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Twaha Mukammel/iOSKickStart.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "iOSKickStart/Classes/**/*"
+}

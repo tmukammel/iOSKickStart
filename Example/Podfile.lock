@@ -1,0 +1,16 @@
+PODS:
+  - iOSKickStart (0.1.0)
+
+DEPENDENCIES:
+  - iOSKickStart (from `../`)
+
+EXTERNAL SOURCES:
+  iOSKickStart:
+    :path: ../
+
+SPEC CHECKSUMS:
+  iOSKickStart: df45086f77d7ad5666a5cb199f6a736e71c8ab8e
+
+PODFILE CHECKSUM: d9d8bbcb1ed485dea43a1deada1eba8c99549d37
+
+COCOAPODS: 1.3.1

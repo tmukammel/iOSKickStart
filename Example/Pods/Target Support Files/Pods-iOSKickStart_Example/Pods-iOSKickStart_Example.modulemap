@@ -1,0 +1,6 @@
+framework module Pods_iOSKickStart_Example {
+  umbrella header "Pods-iOSKickStart_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

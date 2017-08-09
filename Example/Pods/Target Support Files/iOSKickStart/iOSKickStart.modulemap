@@ -1,0 +1,6 @@
+framework module iOSKickStart {
+  umbrella header "iOSKickStart-umbrella.h"
+
+  export *
+  module * { export * }
+}
