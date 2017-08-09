@@ -29,6 +29,7 @@ Current Features:
 6. Navigationbar set solid color and line shadow visibility on/off.
 7. Scrollview input form by just enabling actAsInputForm in interface builder. Use Scrollview's customFirstRespnder property to focus on specif view over keyboard.
 8. Dismiss keyboard on tap with enabling UIView extension var endEditingOnTap.
+9. Check login history with global var isFirstLogin.
 
 Limitations:
 1. You have to extend or use sub classes declared here against Apple's base classes.
