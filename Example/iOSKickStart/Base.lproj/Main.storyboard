@@ -1,25 +1,115 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Test View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="TestViewController" customModule="iOSKickStart_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS" customClass="View" customModule="iOSKickStart">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CKy-Rw-Gpp" customClass="ScrollView" customModule="iOSKickStart">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m7a-VB-xrH" customClass="View" customModule="iOSKickStart">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="940"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input name." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4AM-fb-FN0" customClass="TextField" customModule="iOSKickStart">
+                                                <rect key="frame" x="8" y="300" width="359" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="keyboardConfig" value="name"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="4bn-RY-xBV"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jj0-UW-RHh" customClass="TextField" customModule="iOSKickStart">
+                                                <rect key="frame" x="8" y="530" width="359" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="keyboardConfig" value="email"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="oye-Ws-Yx0"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input password." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="45g-Dn-D7f" customClass="TextField" customModule="iOSKickStart">
+                                                <rect key="frame" x="8" y="810" width="359" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="keyboardConfig" value="password"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="bWh-Yx-7sC"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.95735679768529192" green="1" blue="0.95725698716053609" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="Jj0-UW-RHh" firstAttribute="top" secondItem="4AM-fb-FN0" secondAttribute="bottom" constant="200" id="5TF-WE-Ebl"/>
+                                            <constraint firstAttribute="trailing" secondItem="45g-Dn-D7f" secondAttribute="trailing" constant="8" id="9cP-41-eZl"/>
+                                            <constraint firstAttribute="trailing" secondItem="Jj0-UW-RHh" secondAttribute="trailing" constant="8" id="Ix4-kz-O94"/>
+                                            <constraint firstItem="45g-Dn-D7f" firstAttribute="top" secondItem="Jj0-UW-RHh" secondAttribute="bottom" constant="250" id="Lai-Bm-o8N"/>
+                                            <constraint firstAttribute="bottom" secondItem="45g-Dn-D7f" secondAttribute="bottom" constant="100" id="OH6-EP-NuF"/>
+                                            <constraint firstItem="Jj0-UW-RHh" firstAttribute="leading" secondItem="m7a-VB-xrH" secondAttribute="leading" constant="8" id="XPV-4w-p6R"/>
+                                            <constraint firstItem="45g-Dn-D7f" firstAttribute="leading" secondItem="m7a-VB-xrH" secondAttribute="leading" constant="8" id="lZX-wM-F9S"/>
+                                            <constraint firstAttribute="trailing" secondItem="4AM-fb-FN0" secondAttribute="trailing" constant="8" id="pJo-Fh-0cQ"/>
+                                            <constraint firstItem="4AM-fb-FN0" firstAttribute="leading" secondItem="m7a-VB-xrH" secondAttribute="leading" constant="8" id="wDG-Ja-57Z"/>
+                                            <constraint firstItem="4AM-fb-FN0" firstAttribute="top" secondItem="m7a-VB-xrH" secondAttribute="top" constant="300" id="xl4-hm-jNo"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="endEditingOnTap" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="m7a-VB-xrH" secondAttribute="bottom" id="84f-Ct-tXh"/>
+                                    <constraint firstItem="m7a-VB-xrH" firstAttribute="width" secondItem="CKy-Rw-Gpp" secondAttribute="width" id="Lkp-my-ETW"/>
+                                    <constraint firstItem="m7a-VB-xrH" firstAttribute="leading" secondItem="CKy-Rw-Gpp" secondAttribute="leading" id="W56-ft-S6h"/>
+                                    <constraint firstAttribute="trailing" secondItem="m7a-VB-xrH" secondAttribute="trailing" id="ZyM-pz-dWX"/>
+                                    <constraint firstItem="m7a-VB-xrH" firstAttribute="top" secondItem="CKy-Rw-Gpp" secondAttribute="top" id="aVI-yg-tcP"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="actAsInputForm" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="CKy-Rw-Gpp" secondAttribute="bottom" id="15o-23-R0O"/>
+                            <constraint firstItem="CKy-Rw-Gpp" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="6bf-HI-gdi"/>
+                            <constraint firstItem="CKy-Rw-Gpp" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="WLi-Ly-zWk"/>
+                            <constraint firstAttribute="trailing" secondItem="CKy-Rw-Gpp" secondAttribute="trailing" id="fMH-xT-1z3"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="CKy-Rw-Gpp" id="hFM-jY-HRO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="36.431784107946029"/>
         </scene>
     </scenes>
 </document>

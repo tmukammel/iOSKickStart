@@ -30,6 +30,7 @@ Current Features:
 7. Scrollview input form by just enabling actAsInputForm in interface builder. Use Scrollview's customFirstRespnder property to focus on specif view over keyboard.
 8. Dismiss keyboard on tap with enabling UIView extension var endEditingOnTap.
 9. Check login history with global var isFirstLogin.
+10. Default keyboard config enum in interfacebuilder to choose easily and avoid keyboard config mistakes.
 
 Limitations:
 1. You have to extend or use sub classes declared here against Apple's base classes.

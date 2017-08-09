@@ -8,8 +8,6 @@
 
 import UIKit
 
-let APPDELEGATE = UIApplication.shared.delegate as! AppDelegate
-
 public struct KeyConstants {
     public static let isFirstLogin = "isFirstLogin"
 }
