@@ -1,5 +1,6 @@
 # iOSKickStart
 
+[![CI Status](http://img.shields.io/travis/tmukammel/iOSKickStart.svg?style=flat)](https://travis-ci.org/tmukammel/iOSKickStart)
 [![Version](https://img.shields.io/cocoapods/v/iOSKickStart.svg?style=flat)](http://cocoapods.org/pods/iOSKickStart)
 [![License](https://img.shields.io/cocoapods/l/iOSKickStart.svg?style=flat)](http://cocoapods.org/pods/iOSKickStart)
 [![Platform](https://img.shields.io/cocoapods/p/iOSKickStart.svg?style=flat)](http://cocoapods.org/pods/iOSKickStart)
