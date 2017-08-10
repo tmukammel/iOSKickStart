@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -64,7 +64,6 @@
                                                 </connections>
                                             </textField>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.95735679768529192" green="1" blue="0.95725698716053609" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="Jj0-UW-RHh" firstAttribute="top" secondItem="4AM-fb-FN0" secondAttribute="bottom" constant="200" id="5TF-WE-Ebl"/>
                                             <constraint firstAttribute="trailing" secondItem="45g-Dn-D7f" secondAttribute="trailing" constant="8" id="9cP-41-eZl"/>
@@ -79,6 +78,7 @@
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="endEditingOnTap" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="gradHexColors" value="1BB3FF,3b5910"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>

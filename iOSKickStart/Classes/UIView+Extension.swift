@@ -71,6 +71,28 @@ public extension UIView {
             return false
         }
     }
+    
+    /// Uniform vertical gradient with comma seperated string of dual hex colors
+    @IBInspectable public var gradHexColors: String {
+        set {
+            let colors = newValue.components(separatedBy: ",");
+            
+            guard colors.count == 2 else {
+                return
+            }
+            
+            if let colorOne = UIColor(hexString: colors[0]), let colorTwo = UIColor(hexString: colors[1]) {
+                let gradientLayer = CAGradientLayer()
+                gradientLayer.frame = bounds
+                gradientLayer.colors = [colorOne.cgColor, colorTwo.cgColor];
+                
+                layer.insertSublayer(gradientLayer, at: 0)
+            }
+        }
+        get {
+            return ""
+        }
+    }
 }
 
 // MARK: - End editing on tap
