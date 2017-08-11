@@ -81,12 +81,15 @@ public extension UIView {
                 return
             }
             
-            if let colorOne = UIColor(hexString: colors[0]), let colorTwo = UIColor(hexString: colors[1]) {
+            if let colorOne = ApplicationDesignSpecific.themeColors[colors[0]]
+                , let colorTwo = ApplicationDesignSpecific.themeColors[colors[1]] {
+                
                 let gradientLayer = CAGradientLayer()
                 gradientLayer.frame = bounds
                 gradientLayer.colors = [colorOne.cgColor, colorTwo.cgColor];
                 
                 layer.insertSublayer(gradientLayer, at: 0)
+                
             }
         }
         get {

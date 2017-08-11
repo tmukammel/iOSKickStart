@@ -78,7 +78,7 @@
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="endEditingOnTap" value="YES"/>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="gradHexColors" value="1BB3FF,3b5910"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="gradHexColors" value="MainThemeColor,FacebookColor"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
