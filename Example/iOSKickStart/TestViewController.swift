@@ -36,8 +36,19 @@ class TestViewController: ViewController, UITextFieldDelegate {
     
     // MARK: - UITextFieldDelegate
     
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        if let textFld = (textField as? TextField), let _ = textFld.codeLength {
+            textFld.observeCodeInputDidBegin()
+        }
+    }
+    
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         scrollView.scrollControlRectToVisible(textField)
+        
+        if let textFld = (textField as? TextField), let _ = textFld.codeLength {
+            return textFld.observeCodeInput(shouldChangeCharactersIn: range, replacementString: string)
+        }
+        
         return true
     }
 }

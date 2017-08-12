@@ -94,4 +94,31 @@ public extension UITextField {
             isSecureTextEntry = false
         }
     }
+    
+    @IBInspectable public var leftPadding: CGFloat {
+        set {
+            if (newValue > 0) {
+                let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: newValue, height: 1))
+                leftView = paddingView;
+                leftViewMode = .always
+            }
+        }
+        get {
+            return 0.0
+        }
+    }
+    
+    @IBInspectable public var rightPadding: CGFloat {
+        set {
+            if (newValue > 0) {
+                let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: newValue, height: 1))
+                rightView = paddingView;
+                rightViewMode = .always
+            }
+        }
+        get {
+            return 0.0
+        }
+    }
+    
 }

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'iOSKickStart'
-  s.version          = '0.1.6'
+  s.version          = '0.1.8'
   s.summary          = 'Set of extended standard features to kickstart any iOS project.'
 
 # This description is used to generate tags and improve search results.
@@ -27,10 +27,12 @@ Current Features:
 4. Text localization with key string from interface builder.
 5. Define once use everywhere global constants.
 6. Navigationbar set solid color and line shadow visibility on/off.
-7. Scrollview input form by just enabling actAsInputForm in interface builder. Use Scrollview's customFirstRespnder property to focus on specif view over keyboard.
+7. Scrollview actAsInputForm..
 8. Dismiss keyboard on tap with enabling UIView extension var endEditingOnTap.
-9. Check login history with global var isFirstLogin.
-10. Default keyboard config enum in interfacebuilder to choose easily and avoid keyboard config mistakes.
+9. Default keyboard config enum in interfacebuilder to choose easily and avoid keyboard config mistakes.
+10. UITextField left/right padding.
+11. UIButton adoptive font size.
+12. Code input TextField.
 
 Limitations:
 1. You have to extend or use sub classes declared here against Apple's base classes.

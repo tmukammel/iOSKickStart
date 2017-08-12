@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,63 +20,136 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS" customClass="View" customModule="iOSKickStart">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CKy-Rw-Gpp" customClass="ScrollView" customModule="iOSKickStart">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m7a-VB-xrH" customClass="View" customModule="iOSKickStart">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="940"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="854.33333333333337"/>
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input name." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4AM-fb-FN0" customClass="TextField" customModule="iOSKickStart">
-                                                <rect key="frame" x="8" y="300" width="359" height="30"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Input code" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4AM-fb-FN0" customClass="TextField" customModule="iOSKickStart">
+                                                <rect key="frame" x="8" y="266.33333333333331" width="398" height="46"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="b48-7z-bJA"/>
+                                                </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad"/>
                                                 <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="keyboardConfig" value="name"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="codeLengthAndChar" value="4,●"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="applyStandardCornerRadius" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.8980392157" green="0.1764705882" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="4bn-RY-xBV"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jj0-UW-RHh" customClass="TextField" customModule="iOSKickStart">
-                                                <rect key="frame" x="8" y="530" width="359" height="30"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Input email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jj0-UW-RHh" customClass="TextField" customModule="iOSKickStart">
+                                                <rect key="frame" x="8" y="412.33333333333331" width="398" height="46"/>
+                                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="tnL-jS-rY8"/>
+                                                </constraints>
                                                 <nil key="textColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="keyboardConfig" value="email"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="applyStandardCornerRadius" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="1" green="0.87776360539999998" blue="0.59284651359999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="oye-Ws-Yx0"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input password." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="45g-Dn-D7f" customClass="TextField" customModule="iOSKickStart">
-                                                <rect key="frame" x="8" y="810" width="359" height="30"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Input password." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="45g-Dn-D7f" customClass="TextField" customModule="iOSKickStart">
+                                                <rect key="frame" x="8" y="708.33333333333337" width="398" height="46"/>
+                                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="OiN-Uq-nm6"/>
+                                                </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="keyboardConfig" value="password"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="rightPadding">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.90183886054421769" green="0.75257759353741494" blue="0.97762542517006801" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="bWh-Yx-7sC"/>
                                                 </connections>
                                             </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="kGR-Fn-CBg" customClass="Button" customModule="iOSKickStart">
+                                                <rect key="frame" x="98.333333333333314" y="100.00000000000001" width="217.33333333333337" height="66.333333333333357"/>
+                                                <color key="backgroundColor" red="1" green="0.87776360539999998" blue="0.59284651359999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="kGR-Fn-CBg" secondAttribute="height" multiplier="105:32" id="cLq-mv-htm"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                <state key="normal" title="Button Is This">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="numberOfLines">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="hightToFontRatio">
+                                                        <real key="value" value="0.34999999999999998"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="adjustFontSize" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="60"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="Jj0-UW-RHh" firstAttribute="top" secondItem="4AM-fb-FN0" secondAttribute="bottom" constant="200" id="5TF-WE-Ebl"/>
+                                            <constraint firstItem="Jj0-UW-RHh" firstAttribute="top" secondItem="4AM-fb-FN0" secondAttribute="bottom" constant="100" id="5TF-WE-Ebl"/>
+                                            <constraint firstItem="4AM-fb-FN0" firstAttribute="top" secondItem="kGR-Fn-CBg" secondAttribute="bottom" constant="100" id="7Yd-kt-hiA"/>
                                             <constraint firstAttribute="trailing" secondItem="45g-Dn-D7f" secondAttribute="trailing" constant="8" id="9cP-41-eZl"/>
                                             <constraint firstAttribute="trailing" secondItem="Jj0-UW-RHh" secondAttribute="trailing" constant="8" id="Ix4-kz-O94"/>
                                             <constraint firstItem="45g-Dn-D7f" firstAttribute="top" secondItem="Jj0-UW-RHh" secondAttribute="bottom" constant="250" id="Lai-Bm-o8N"/>
                                             <constraint firstAttribute="bottom" secondItem="45g-Dn-D7f" secondAttribute="bottom" constant="100" id="OH6-EP-NuF"/>
+                                            <constraint firstItem="kGR-Fn-CBg" firstAttribute="top" secondItem="m7a-VB-xrH" secondAttribute="top" constant="100" id="UhH-kY-sPT"/>
                                             <constraint firstItem="Jj0-UW-RHh" firstAttribute="leading" secondItem="m7a-VB-xrH" secondAttribute="leading" constant="8" id="XPV-4w-p6R"/>
+                                            <constraint firstItem="kGR-Fn-CBg" firstAttribute="centerX" secondItem="m7a-VB-xrH" secondAttribute="centerX" id="cwY-wB-7kP"/>
                                             <constraint firstItem="45g-Dn-D7f" firstAttribute="leading" secondItem="m7a-VB-xrH" secondAttribute="leading" constant="8" id="lZX-wM-F9S"/>
                                             <constraint firstAttribute="trailing" secondItem="4AM-fb-FN0" secondAttribute="trailing" constant="8" id="pJo-Fh-0cQ"/>
+                                            <constraint firstItem="kGR-Fn-CBg" firstAttribute="width" secondItem="m7a-VB-xrH" secondAttribute="width" multiplier="197:375" id="sLh-gL-j95"/>
                                             <constraint firstItem="4AM-fb-FN0" firstAttribute="leading" secondItem="m7a-VB-xrH" secondAttribute="leading" constant="8" id="wDG-Ja-57Z"/>
-                                            <constraint firstItem="4AM-fb-FN0" firstAttribute="top" secondItem="m7a-VB-xrH" secondAttribute="top" constant="300" id="xl4-hm-jNo"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="endEditingOnTap" value="YES"/>

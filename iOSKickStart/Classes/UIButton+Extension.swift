@@ -40,4 +40,35 @@ public extension UIButton {
             return ""
         }
     }
+    
+    @IBInspectable public var hightToFontRatio: CGFloat {
+        set {
+            if (newValue > 0 && newValue <= 1) {
+                titleLabel?.font = titleLabel?.font.withSize(frame.height * newValue)
+            }
+        }
+        get {
+            return 0
+        }
+    }
+    
+    @IBInspectable public var numberOfLines: Int {
+        set {
+            if (newValue >= 0) {
+                titleLabel?.numberOfLines = newValue
+            }
+        }
+        get {
+            return 0
+        }
+    }
+    
+    @IBInspectable public var adjustFontSize: Bool {
+        set {
+            titleLabel?.adjustsFontSizeToFitWidth = newValue
+        }
+        get {
+            return false
+        }
+    }
 }

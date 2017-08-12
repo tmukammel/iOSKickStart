@@ -25,7 +25,7 @@ public extension UIView {
     
     @IBInspectable public var cornerRadius: CGFloat {
         set (value) {
-            layer.cornerRadius = value
+            layer.cornerRadius = min(bounds.height * 0.5, value)
             layer.masksToBounds = value > 0
         }
         get {
