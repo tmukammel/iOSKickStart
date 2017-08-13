@@ -33,4 +33,15 @@ public extension UILabel {
             return ""
         }
     }
+    
+    @IBInspectable public var fontToHeightRatio: CGFloat {
+        set {
+            if (newValue > 0 && newValue <= 1) {
+                font = font.withSize(frame.height * newValue)
+            }
+        }
+        get {
+            return 0
+        }
+    }
 }

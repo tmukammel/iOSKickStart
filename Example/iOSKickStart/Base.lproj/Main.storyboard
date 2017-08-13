@@ -27,7 +27,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m7a-VB-xrH" customClass="View" customModule="iOSKickStart">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="854.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="824.33333333333337"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Input code" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4AM-fb-FN0" customClass="TextField" customModule="iOSKickStart">
                                                 <rect key="frame" x="8" y="266.33333333333331" width="398" height="46"/>
@@ -82,7 +82,7 @@
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Input password." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="45g-Dn-D7f" customClass="TextField" customModule="iOSKickStart">
-                                                <rect key="frame" x="8" y="708.33333333333337" width="398" height="46"/>
+                                                <rect key="frame" x="8" y="678.33333333333337" width="398" height="46"/>
                                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="46" id="OiN-Uq-nm6"/>
@@ -126,26 +126,43 @@
                                                     <userDefinedRuntimeAttribute type="number" keyPath="numberOfLines">
                                                         <integer key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="hightToFontRatio">
-                                                        <real key="value" value="0.34999999999999998"/>
-                                                    </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="adjustFontSize" value="YES"/>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="60"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontToHeightRatio">
+                                                        <real key="value" value="0.5"/>
+                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This will fill label bounds." textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLW-5t-OGT" customClass="Label" customModule="iOSKickStart">
+                                                <rect key="frame" x="67.666666666666686" y="488.33333333333337" width="280" height="40.000000000000114"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="bLW-5t-OGT" secondAttribute="height" multiplier="280:40" id="zc6-cx-hKP"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="fontToHeightRatio">
+                                                        <real key="value" value="0.59999999999999998"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstItem="45g-Dn-D7f" firstAttribute="top" secondItem="bLW-5t-OGT" secondAttribute="bottom" constant="150" id="2NN-k2-N5i"/>
                                             <constraint firstItem="Jj0-UW-RHh" firstAttribute="top" secondItem="4AM-fb-FN0" secondAttribute="bottom" constant="100" id="5TF-WE-Ebl"/>
                                             <constraint firstItem="4AM-fb-FN0" firstAttribute="top" secondItem="kGR-Fn-CBg" secondAttribute="bottom" constant="100" id="7Yd-kt-hiA"/>
                                             <constraint firstAttribute="trailing" secondItem="45g-Dn-D7f" secondAttribute="trailing" constant="8" id="9cP-41-eZl"/>
                                             <constraint firstAttribute="trailing" secondItem="Jj0-UW-RHh" secondAttribute="trailing" constant="8" id="Ix4-kz-O94"/>
-                                            <constraint firstItem="45g-Dn-D7f" firstAttribute="top" secondItem="Jj0-UW-RHh" secondAttribute="bottom" constant="250" id="Lai-Bm-o8N"/>
                                             <constraint firstAttribute="bottom" secondItem="45g-Dn-D7f" secondAttribute="bottom" constant="100" id="OH6-EP-NuF"/>
+                                            <constraint firstItem="bLW-5t-OGT" firstAttribute="width" secondItem="m7a-VB-xrH" secondAttribute="width" multiplier="280:414" id="QKw-3o-LJd"/>
                                             <constraint firstItem="kGR-Fn-CBg" firstAttribute="top" secondItem="m7a-VB-xrH" secondAttribute="top" constant="100" id="UhH-kY-sPT"/>
                                             <constraint firstItem="Jj0-UW-RHh" firstAttribute="leading" secondItem="m7a-VB-xrH" secondAttribute="leading" constant="8" id="XPV-4w-p6R"/>
                                             <constraint firstItem="kGR-Fn-CBg" firstAttribute="centerX" secondItem="m7a-VB-xrH" secondAttribute="centerX" id="cwY-wB-7kP"/>
+                                            <constraint firstItem="bLW-5t-OGT" firstAttribute="centerX" secondItem="m7a-VB-xrH" secondAttribute="centerX" id="gaE-vf-0fy"/>
+                                            <constraint firstItem="bLW-5t-OGT" firstAttribute="top" secondItem="Jj0-UW-RHh" secondAttribute="bottom" constant="30" id="khc-pw-78o"/>
                                             <constraint firstItem="45g-Dn-D7f" firstAttribute="leading" secondItem="m7a-VB-xrH" secondAttribute="leading" constant="8" id="lZX-wM-F9S"/>
                                             <constraint firstAttribute="trailing" secondItem="4AM-fb-FN0" secondAttribute="trailing" constant="8" id="pJo-Fh-0cQ"/>
                                             <constraint firstItem="kGR-Fn-CBg" firstAttribute="width" secondItem="m7a-VB-xrH" secondAttribute="width" multiplier="197:375" id="sLh-gL-j95"/>
@@ -184,7 +201,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="36.431784107946029"/>
+            <point key="canvasLocation" x="31.884057971014496" y="35.869565217391305"/>
         </scene>
     </scenes>
 </document>

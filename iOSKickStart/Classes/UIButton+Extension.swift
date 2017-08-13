@@ -41,7 +41,7 @@ public extension UIButton {
         }
     }
     
-    @IBInspectable public var hightToFontRatio: CGFloat {
+    @IBInspectable public var fontToHeightRatio: CGFloat {
         set {
             if (newValue > 0 && newValue <= 1) {
                 titleLabel?.font = titleLabel?.font.withSize(frame.height * newValue)

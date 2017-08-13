@@ -46,12 +46,12 @@ textField.rightPadding = 8.0
 
 #### 11. UIButton adoptive font size
 
-<img src="https://dl.dropboxusercontent.com/s/cet4cjctq2ba1xa/buttonCustomClass.png?dl=0" />	<img src="https://dl.dropboxusercontent.com/s/qfdit4ecko7ldst/adoptiveButtonFont.png?dl=0" />
+<img src="https://dl.dropboxusercontent.com/s/cet4cjctq2ba1xa/buttonCustomClass.png?dl=0" />	<img src="https://dl.dropboxusercontent.com/s/mqpgilyfet1d1ms/adoptiveButtonFont.png?dl=0" />
 
 OR
 
 ```swift
-button.hightToFontRatio = 0.35
+button.fontToHeightRatio = 0.35
 button.numberOfLines = 1
 button.adjustFontSize = true
 ```
@@ -87,6 +87,16 @@ func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange
     }
     return true
 }
+```
+
+#### 13. UILabel bounds.height to font size ratio
+
+<img src="https://dl.dropboxusercontent.com/s/mr4luizt1n4zgxy/labelCustomClass.png?dl=0" />	<img src="https://dl.dropboxusercontent.com/s/fhpt9tm61enm4et/labelFontToHeightRatio.png?dl=0" />
+
+OR
+
+```swift
+label.fontToHeightRatio = 0.6
 ```
 
 ## Limitations
