@@ -99,6 +99,16 @@ OR
 label.fontToHeightRatio = 0.6
 ```
 
+#### 14. UIViewController titleImage IBDesignable
+
+<img src="https://dl.dropboxusercontent.com/s/24rs0dnadfzwv6m/ViewControllerTitleImage.png?dl=0" />
+
+OR
+
+```swift
+viewController.titleImage = UIImage(named: "image_name")
+```
+
 ## Limitations
 
 1. You have to extend or use sub classes declared here against Apple's base classes.

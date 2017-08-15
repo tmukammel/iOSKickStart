@@ -8,6 +8,18 @@
 
 import UIKit
 
+@IBDesignable
 public extension UIViewController {
+    
+    @IBInspectable public var titleImage: UIImage? {
+        set (titleImg) {
+            if let image = titleImg {
+                navigationItem.titleView = UIImageView(image: image)
+            }
+        }
+        get {
+            return nil
+        }
+    }
     
 }

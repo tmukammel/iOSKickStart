@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uPv-Yb-GZd">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -195,6 +195,10 @@
                             <constraint firstAttribute="trailing" secondItem="CKy-Rw-Gpp" secondAttribute="trailing" id="fMH-xT-1z3"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="chg-Ej-agL"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="image" keyPath="titleImage" value="musical"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="scrollView" destination="CKy-Rw-Gpp" id="hFM-jY-HRO"/>
                     </connections>
@@ -203,5 +207,24 @@
             </objects>
             <point key="canvasLocation" x="31.884057971014496" y="35.869565217391305"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hXw-bG-UNq">
+            <objects>
+                <navigationController id="uPv-Yb-GZd" customClass="NavigationController" customModule="iOSKickStart" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vXy-xk-jT8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="BRQ-j2-L74"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U3D-Pe-khc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-762" y="36"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="musical" width="25" height="25"/>
+    </resources>
 </document>

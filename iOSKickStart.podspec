@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'iOSKickStart'
-  s.version          = '0.1.9'
+  s.version          = '0.2.0'
   s.summary          = 'Set of extended standard features to kickstart any iOS project.'
 
 # This description is used to generate tags and improve search results.
@@ -34,6 +34,7 @@ Current Features:
 11. UIButton adoptive font size.
 12. Code input TextField.
 13. UILabel bounds.height to font size ratio.
+14. UIViewController titleImage IBDesignable.
 
 Limitations:
 1. You have to extend or use sub classes declared here against Apple's base classes.
