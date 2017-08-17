@@ -40,6 +40,7 @@
 		F7597F1E1F3BCF6800AF2A51 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597F111F3BCF6800AF2A51 /* TextField.swift */; };
 		F7597F1F1F3BCF6800AF2A51 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597F121F3BCF6800AF2A51 /* View.swift */; };
 		F7597F201F3BCF6800AF2A51 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597F131F3BCF6800AF2A51 /* ViewController.swift */; };
+		F78083D01F462163007B9467 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78083CF1F462163007B9467 /* UIViewController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		F7597F111F3BCF6800AF2A51 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextField.swift; path = iOSKickStart/Classes/TextField.swift; sourceTree = "<group>"; };
 		F7597F121F3BCF6800AF2A51 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = View.swift; path = iOSKickStart/Classes/View.swift; sourceTree = "<group>"; };
 		F7597F131F3BCF6800AF2A51 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = iOSKickStart/Classes/ViewController.swift; sourceTree = "<group>"; };
+		F78083CF1F462163007B9467 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+Extension.swift"; path = "iOSKickStart/Classes/UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		F8EB47BC36A20C7022E01D00BD96107D /* Pods-iOSKickStart_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-iOSKickStart_Tests.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -275,6 +277,7 @@
 				F7597EF81F3BCF3800AF2A51 /* UIScrollView+Extension.swift */,
 				F7597EF91F3BCF3800AF2A51 /* UITextField+Extension.swift */,
 				F7597EFA1F3BCF3800AF2A51 /* UIView+Extension.swift */,
+				F78083CF1F462163007B9467 /* UIViewController+Extension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -449,6 +452,7 @@
 				F7597F151F3BCF6800AF2A51 /* CrossDissolveSegue.swift in Sources */,
 				F7597F001F3BCF3800AF2A51 /* UILabel+Extension.swift in Sources */,
 				F7597F171F3BCF6800AF2A51 /* ImageView.swift in Sources */,
+				F78083D01F462163007B9467 /* UIViewController+Extension.swift in Sources */,
 				F7597F021F3BCF3800AF2A51 /* UIProgressView+Extension.swift in Sources */,
 				F7597EFD1F3BCF3800AF2A51 /* NSBundle+Language.m in Sources */,
 				F7597EF01F3BCEDD00AF2A51 /* GlobalConstants.swift in Sources */,

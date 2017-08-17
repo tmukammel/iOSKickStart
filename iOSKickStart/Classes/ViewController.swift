@@ -11,29 +11,20 @@ import UIKit
 @IBDesignable
 open class ViewController: UIViewController {
     
-    @IBInspectable public var isNavBarHidden: Bool {
-        set {
-            isNavigationBarHidden = newValue
-        }
-        get {
-            return false
+    @IBInspectable public var isNavBarHidden: Bool = false {
+        didSet {
+            navigationController?.setNavigationBarHidden(isNavBarHidden, animated: true);
         }
     }
     
     @IBInspectable public var shouldRemoveFormStackOnDisapper: Bool = false
-    
-    // MARK: - Private
-    
-    private var isNavigationBarHidden: Bool? = nil
     
     // MARK:- Superclass Override
     
     override open func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        if let boolValue = isNavigationBarHidden {
-            navigationController?.setNavigationBarHidden(boolValue, animated: true);
-        }
+        navigationController?.setNavigationBarHidden(isNavBarHidden, animated: true);
     }
     
     override open func viewDidDisappear(_ animated: Bool) {
