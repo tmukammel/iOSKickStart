@@ -25,11 +25,11 @@ A beautiful project template to kick start any iOS project. The target is to avo
 
 #### 5. Define once use everywhere global constants.
 
-#### 6. Navigationbar set solid color and line shadow visibility on/off.
+#### 6. NavigationController isNavBarHidden IBInspectable.
 
-#### 7. Scrollview actAsInputForm.
+#### 7. Scrollview actAsInputForm IBInspectable.
 
-#### 8. Dismiss keyboard on tap with enabling UIView extension var endEditingOnTap.
+#### 8. Dismiss keyboard on tap with enabling UIView extension var endEditingOnTap IBInspectable.
 
 #### 9. Default keyboard config enum in interfacebuilder to choose easily and avoid keyboard config mistakes.
 
@@ -99,7 +99,7 @@ OR
 label.fontToHeightRatio = 0.6
 ```
 
-#### 14. UIViewController titleImage IBDesignable
+#### 14. UIViewController titleImage IBInspectable
 
 <img src="https://dl.dropboxusercontent.com/s/24rs0dnadfzwv6m/ViewControllerTitleImage.png?dl=0" />
 

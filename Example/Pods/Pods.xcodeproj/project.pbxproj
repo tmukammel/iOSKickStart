@@ -27,7 +27,6 @@
 		F7597F031F3BCF3800AF2A51 /* UIScrollView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597EF81F3BCF3800AF2A51 /* UIScrollView+Extension.swift */; };
 		F7597F041F3BCF3800AF2A51 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597EF91F3BCF3800AF2A51 /* UITextField+Extension.swift */; };
 		F7597F051F3BCF3800AF2A51 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597EFA1F3BCF3800AF2A51 /* UIView+Extension.swift */; };
-		F7597F061F3BCF3800AF2A51 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597EFB1F3BCF3800AF2A51 /* UIViewController+Extension.swift */; };
 		F7597F141F3BCF6800AF2A51 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597F071F3BCF6800AF2A51 /* Button.swift */; };
 		F7597F151F3BCF6800AF2A51 /* CrossDissolveSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597F081F3BCF6800AF2A51 /* CrossDissolveSegue.swift */; };
 		F7597F161F3BCF6800AF2A51 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7597F091F3BCF6800AF2A51 /* Image.swift */; };
@@ -95,7 +94,6 @@
 		F7597EF81F3BCF3800AF2A51 /* UIScrollView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIScrollView+Extension.swift"; path = "iOSKickStart/Classes/UIScrollView+Extension.swift"; sourceTree = "<group>"; };
 		F7597EF91F3BCF3800AF2A51 /* UITextField+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITextField+Extension.swift"; path = "iOSKickStart/Classes/UITextField+Extension.swift"; sourceTree = "<group>"; };
 		F7597EFA1F3BCF3800AF2A51 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Extension.swift"; path = "iOSKickStart/Classes/UIView+Extension.swift"; sourceTree = "<group>"; };
-		F7597EFB1F3BCF3800AF2A51 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+Extension.swift"; path = "iOSKickStart/Classes/UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		F7597F071F3BCF6800AF2A51 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Button.swift; path = iOSKickStart/Classes/Button.swift; sourceTree = "<group>"; };
 		F7597F081F3BCF6800AF2A51 /* CrossDissolveSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CrossDissolveSegue.swift; path = iOSKickStart/Classes/CrossDissolveSegue.swift; sourceTree = "<group>"; };
 		F7597F091F3BCF6800AF2A51 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Image.swift; path = iOSKickStart/Classes/Image.swift; sourceTree = "<group>"; };
@@ -277,7 +275,6 @@
 				F7597EF81F3BCF3800AF2A51 /* UIScrollView+Extension.swift */,
 				F7597EF91F3BCF3800AF2A51 /* UITextField+Extension.swift */,
 				F7597EFA1F3BCF3800AF2A51 /* UIView+Extension.swift */,
-				F7597EFB1F3BCF3800AF2A51 /* UIViewController+Extension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -452,7 +449,6 @@
 				F7597F151F3BCF6800AF2A51 /* CrossDissolveSegue.swift in Sources */,
 				F7597F001F3BCF3800AF2A51 /* UILabel+Extension.swift in Sources */,
 				F7597F171F3BCF6800AF2A51 /* ImageView.swift in Sources */,
-				F7597F061F3BCF3800AF2A51 /* UIViewController+Extension.swift in Sources */,
 				F7597F021F3BCF3800AF2A51 /* UIProgressView+Extension.swift in Sources */,
 				F7597EFD1F3BCF3800AF2A51 /* NSBundle+Language.m in Sources */,
 				F7597EF01F3BCEDD00AF2A51 /* GlobalConstants.swift in Sources */,

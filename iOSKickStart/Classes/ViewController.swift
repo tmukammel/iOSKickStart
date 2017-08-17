@@ -11,90 +11,29 @@ import UIKit
 @IBDesignable
 open class ViewController: UIViewController {
     
-    // MARK:- Public API
-    
-    @IBInspectable public var localizedTitleKey: String = "" {
-        didSet {
-            title = NSLocalizedString(localizedTitleKey, comment: "")
+    @IBInspectable public var isNavBarHidden: Bool {
+        set {
+            isNavigationBarHidden = newValue
         }
-    }
-
-    @IBInspectable public var isNavBarHidden: Bool = false {
-        didSet {
-            self.navigationController?.setNavigationBarHidden(isNavBarHidden, animated: true);
+        get {
+            return false
         }
     }
     
     @IBInspectable public var shouldRemoveFormStackOnDisapper: Bool = false
     
-    @IBInspectable public var navigationBarColorKey: String = "" {
-        didSet {
-            setNavigationBarColor();
-        }
-    }
+    // MARK: - Private
     
-    @IBInspectable public var hideNavBarHairLineShadow: Bool = false
-    
-    // MARK:- Private
-    
-    private weak var navBarHairLineShadowImage: UIView?
-    
-    private func setNavigationBarColor() {
-        if navigationBarColorKey == "none" {
-            navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-            navigationController?.navigationBar.shadowImage = UIImage()
-            navigationController?.navigationBar.isTranslucent = true
-            navigationController?.navigationBar.backgroundColor = UIColor.clear
-        }
-        else if navigationBarColorKey != "" {
-            if let color = ApplicationDesignSpecific.themeColors[navigationBarColorKey] {
-                navigationController?.navigationBar.barTintColor =  color
-            }
-            
-        }
-    }
-    
-    private func setNavBarHairLineShadowVisibility() {
-        if let shadowImage = navBarHairLineShadowImage {
-            shadowImage.isHidden = hideNavBarHairLineShadow
-        }
-        else if let navController = self.navigationController {
-            for parent in navController.navigationBar.subviews {
-                for childView in parent.subviews {
-                    if(childView is UIImageView) {
-                        navBarHairLineShadowImage = childView
-                        childView.isHidden = hideNavBarHairLineShadow
-                    }
-                }
-            }
-        }
-    }
+    private var isNavigationBarHidden: Bool? = nil
     
     // MARK:- Superclass Override
-    
-    override open func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
     
     override open func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        title = NSLocalizedString(localizedTitleKey, comment: "")
-        
-        navigationController?.setNavigationBarHidden(isNavBarHidden, animated: true);
-        
-        setNavigationBarColor()
-        
-        setNavBarHairLineShadowVisibility()
-        
-        navigationController?.navigationBar.tintColor = UIColor.white
-        let attributes = [
-            NSForegroundColorAttributeName : UIColor.white
-//            NSFontAttributeName: UIFont.boldSystemFont(ofSize: 14)
-        ]
-        navigationController?.navigationBar.titleTextAttributes = attributes
+        if let boolValue = isNavigationBarHidden {
+            navigationController?.setNavigationBarHidden(boolValue, animated: true);
+        }
     }
     
     override open func viewDidDisappear(_ animated: Bool) {

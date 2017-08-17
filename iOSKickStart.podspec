@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'iOSKickStart'
-  s.version          = '0.2.0'
+  s.version          = '0.2.1'
   s.summary          = 'Set of extended standard features to kickstart any iOS project.'
 
 # This description is used to generate tags and improve search results.
@@ -19,22 +19,6 @@ Pod::Spec.new do |s|
 
   s.description      = <<-DESC
 A beautiful project template to kick start any iOS project. The target is to avoid recoding for features like UIView rounded rect designables or a simple scrolling form. Please contribute to this project to fill up with a standard set of features frequently needed.
-
-Current Features:
-1. Crossdissolve and reverse push pop navigation.
-2. UIColor init with hex value.
-3. UIView corner-radius and colored-border IBInspectables.
-4. Text localization with key string from interface builder.
-5. Define once use everywhere global constants.
-6. Navigationbar set solid color and line shadow visibility on/off.
-7. Scrollview actAsInputForm..
-8. Dismiss keyboard on tap with enabling UIView extension var endEditingOnTap.
-9. Default keyboard config enum in interfacebuilder to choose easily and avoid keyboard config mistakes.
-10. UITextField left/right padding.
-11. UIButton adoptive font size.
-12. Code input TextField.
-13. UILabel bounds.height to font size ratio.
-14. UIViewController titleImage IBDesignable.
 
 Limitations:
 1. You have to extend or use sub classes declared here against Apple's base classes.

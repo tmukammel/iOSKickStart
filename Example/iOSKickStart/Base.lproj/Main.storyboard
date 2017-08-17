@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uPv-Yb-GZd">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -20,17 +20,17 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS" customClass="View" customModule="iOSKickStart">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CKy-Rw-Gpp" customClass="ScrollView" customModule="iOSKickStart">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m7a-VB-xrH" customClass="View" customModule="iOSKickStart">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="824.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="800.5"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Input code" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4AM-fb-FN0" customClass="TextField" customModule="iOSKickStart">
-                                                <rect key="frame" x="8" y="266.33333333333331" width="398" height="46"/>
+                                                <rect key="frame" x="8" y="251.5" width="304" height="46"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="46" id="b48-7z-bJA"/>
@@ -53,7 +53,7 @@
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Input email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jj0-UW-RHh" customClass="TextField" customModule="iOSKickStart">
-                                                <rect key="frame" x="8" y="412.33333333333331" width="398" height="46"/>
+                                                <rect key="frame" x="8" y="397.5" width="304" height="46"/>
                                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="46" id="tnL-jS-rY8"/>
@@ -82,7 +82,7 @@
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Input password." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="45g-Dn-D7f" customClass="TextField" customModule="iOSKickStart">
-                                                <rect key="frame" x="8" y="678.33333333333337" width="398" height="46"/>
+                                                <rect key="frame" x="8" y="654.5" width="304" height="46"/>
                                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="46" id="OiN-Uq-nm6"/>
@@ -113,7 +113,7 @@
                                                 </connections>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="kGR-Fn-CBg" customClass="Button" customModule="iOSKickStart">
-                                                <rect key="frame" x="98.333333333333314" y="100.00000000000001" width="217.33333333333337" height="66.333333333333357"/>
+                                                <rect key="frame" x="76" y="100" width="168" height="51.5"/>
                                                 <color key="backgroundColor" red="1" green="0.87776360539999998" blue="0.59284651359999996" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="kGR-Fn-CBg" secondAttribute="height" multiplier="105:32" id="cLq-mv-htm"/>
@@ -136,7 +136,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This will fill label bounds." textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLW-5t-OGT" customClass="Label" customModule="iOSKickStart">
-                                                <rect key="frame" x="67.666666666666686" y="488.33333333333337" width="280" height="40.000000000000114"/>
+                                                <rect key="frame" x="52.5" y="473.5" width="216.5" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="bLW-5t-OGT" secondAttribute="height" multiplier="280:40" id="zc6-cx-hKP"/>
                                                 </constraints>
@@ -196,9 +196,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="chg-Ej-agL"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="image" keyPath="titleImage" value="musical"/>
-                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="scrollView" destination="CKy-Rw-Gpp" id="hFM-jY-HRO"/>
                     </connections>
@@ -206,6 +203,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="31.884057971014496" y="35.869565217391305"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zBK-vX-rLo">
+            <objects>
+                <viewController id="PJ8-11-wUF" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hiD-bE-6UJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="5EE-b6-Ex4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QFa-Ym-fZG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Esv-BL-LjJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0pN-95-FRs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1839.375" y="35.91549295774648"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hXw-bG-UNq">
@@ -224,7 +240,4 @@
             <point key="canvasLocation" x="-762" y="36"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="musical" width="25" height="25"/>
-    </resources>
 </document>
