@@ -10,16 +10,16 @@ import UIKit
 
 @IBDesignable
 public extension UIButton {
-    @IBInspectable public var localizedTitleKey: String {
+    @IBInspectable var localizedTitleKey: String {
         set (key) {
-            setTitle(NSLocalizedString(key, comment: ""), for: UIControlState())
+            setTitle(NSLocalizedString(key, comment: ""), for: UIControl.State())
         }
         get {
             return ""
         }
     }
     
-    @IBInspectable public var keyNormalTxtColor: String {
+    @IBInspectable var keyNormalTxtColor: String {
         set (colorKey) {
             if let color = ApplicationDesignSpecific.themeColors[colorKey] {
                 setTitleColor(color, for: .normal)
@@ -30,7 +30,7 @@ public extension UIButton {
         }
     }
     
-    @IBInspectable public var keyDisabledTxtColor: String {
+    @IBInspectable var keyDisabledTxtColor: String {
         set (colorKey) {
             if let color = ApplicationDesignSpecific.themeColors[colorKey] {
                 setTitleColor(color, for: .disabled)
@@ -41,7 +41,7 @@ public extension UIButton {
         }
     }
     
-    @IBInspectable public var fontToHeightRatio: CGFloat {
+    @IBInspectable var fontToHeightRatio: CGFloat {
         set {
             if (newValue > 0 && newValue <= 1) {
                 titleLabel?.font = titleLabel?.font.withSize(frame.height * newValue)
@@ -52,7 +52,7 @@ public extension UIButton {
         }
     }
     
-    @IBInspectable public var numberOfLines: Int {
+    @IBInspectable var numberOfLines: Int {
         set {
             if (newValue >= 0) {
                 titleLabel?.numberOfLines = newValue
@@ -63,7 +63,7 @@ public extension UIButton {
         }
     }
     
-    @IBInspectable public var adjustFontSize: Bool {
+    @IBInspectable var adjustFontSize: Bool {
         set {
             titleLabel?.adjustsFontSizeToFitWidth = newValue
         }

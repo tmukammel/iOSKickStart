@@ -16,7 +16,7 @@ open class TextField: UITextField, UITextFieldDelegate {
     
     @IBInspectable public var codeLengthAndChar: String {
         set {
-            if (newValue.characters.count >= 3) {
+            if (newValue.count >= 3) {
                 codeLength = nil
                 codePlaceHolder = nil
                 
@@ -27,7 +27,7 @@ open class TextField: UITextField, UITextFieldDelegate {
                 }
                 
                 codeLength = Int(data[0])
-                codePlaceHolder = data[1].characters.first;
+                codePlaceHolder = data[1].first;
                 
                 if let length = codeLength, length > 0, let placeholder = codePlaceHolder {
                     text = String(repeating: String(describing: placeholder), count: length)
@@ -58,15 +58,15 @@ open class TextField: UITextField, UITextFieldDelegate {
         print("Location: \(range.location), Length: \(range.length), String: \(string)");
         
         guard let length = codeLength, let code = codePlaceHolder,
-            range.location + string.characters.count <= length else {
+            range.location + string.count <= length else {
             return false
         }
         
         switch range.length {
         case 0:
-            text = (text! as NSString).replacingCharacters(in: NSMakeRange(range.location, string.characters.count), with: string)
+            text = (text! as NSString).replacingCharacters(in: NSMakeRange(range.location, string.count), with: string)
             
-            if let position = position(from: beginningOfDocument, offset: range.location + string.characters.count) {
+            if let position = position(from: beginningOfDocument, offset: range.location + string.count) {
                 selectedTextRange = textRange(from: position, to: position)
             }
             

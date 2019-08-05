@@ -11,7 +11,7 @@ import UIKit
 @IBDesignable
 public extension UIViewController {
     
-    @IBInspectable public var localizedTitleKey: String {
+    @IBInspectable var localizedTitleKey: String {
         set (key) {
             title = NSLocalizedString(key, comment: "")
         }
@@ -20,7 +20,7 @@ public extension UIViewController {
         }
     }
     
-    @IBInspectable public var titleImage: UIImage? {
+    @IBInspectable var titleImage: UIImage? {
         set (titleImg) {
             if let image = titleImg {
                 navigationItem.titleView = UIImageView(image: image)

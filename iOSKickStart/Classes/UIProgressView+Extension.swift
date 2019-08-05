@@ -10,7 +10,7 @@ import UIKit
 
 @IBDesignable
 public extension UIProgressView {
-    @IBInspectable public var trackTintColorKey: String {
+    @IBInspectable var trackTintColorKey: String {
         set (colorKey) {
             trackTintColor = ApplicationDesignSpecific.themeColors[colorKey]
         }

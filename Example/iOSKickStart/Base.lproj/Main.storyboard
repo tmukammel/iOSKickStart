@@ -135,9 +135,6 @@
                                                         <real key="value" value="0.5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
-                                                <connections>
-                                                    <segue destination="4hd-WX-Mgs" kind="show" id="CWz-or-ZxK"/>
-                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This will fill label bounds." textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLW-5t-OGT" customClass="Label" customModule="iOSKickStart">
                                                 <rect key="frame" x="67" y="488.33333333333331" width="280" height="39.999999999999943"/>
@@ -210,51 +207,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="20" y="36"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="wzP-Q5-ORm">
-            <objects>
-                <viewController id="4hd-WX-Mgs" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="0Q2-Qj-8Lb"/>
-                        <viewControllerLayoutGuide type="bottom" id="uzQ-gv-Dqd"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="BQr-Dz-fmD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ubp-Y2-pKc">
-                                <rect key="frame" x="79" y="163" width="280" height="63"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="63" id="ey8-iB-7Gu"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.8980392157" green="0.1764705882" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="ubp-Y2-pKc" firstAttribute="top" secondItem="0Q2-Qj-8Lb" secondAttribute="bottom" constant="99" id="554-cq-IdG"/>
-                            <constraint firstItem="ubp-Y2-pKc" firstAttribute="leading" secondItem="BQr-Dz-fmD" secondAttribute="leadingMargin" constant="59" id="5v9-Gd-CeY"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ubp-Y2-pKc" secondAttribute="trailing" constant="35" id="wcw-5c-Gf2"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PjQ-LP-vYk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="679.71014492753625" y="37.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hXw-bG-UNq">
