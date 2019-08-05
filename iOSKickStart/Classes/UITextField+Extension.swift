@@ -20,14 +20,14 @@ public extension UITextField {
     
     // MARK: - Inspectables
     
-    @IBInspectable public var localizedPlaceholderKey: String {
+    @IBInspectable var localizedPlaceholderKey: String {
         get { return "" }
         set (key) {
             placeholder = NSLocalizedString(key, comment: "")
         }
     }
     
-    @IBInspectable public var keyTextColor: String {
+    @IBInspectable var keyTextColor: String {
         set (colorKey) {
             if let color = ApplicationDesignSpecific.themeColors[colorKey] {
                 textColor = color
@@ -38,7 +38,7 @@ public extension UITextField {
         }
     }
     
-    @IBInspectable public var keyboardConfig: String {
+    @IBInspectable var keyboardConfig: String {
         set (newValue) {
             if let config = TextFieldKeyboardConfig(rawValue: newValue) {
                 prepareWithConfiguration(config)
@@ -95,7 +95,7 @@ public extension UITextField {
         }
     }
     
-    @IBInspectable public var leftPadding: CGFloat {
+    @IBInspectable var leftPadding: CGFloat {
         set {
             if (newValue > 0) {
                 let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: newValue, height: 1))
@@ -108,7 +108,7 @@ public extension UITextField {
         }
     }
     
-    @IBInspectable public var rightPadding: CGFloat {
+    @IBInspectable var rightPadding: CGFloat {
         set {
             if (newValue > 0) {
                 let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: newValue, height: 1))

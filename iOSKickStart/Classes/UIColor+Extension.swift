@@ -10,7 +10,7 @@ import UIKit
 
 public extension UIColor {
     
-    public convenience init?(hexString: String) {
+    convenience init?(hexString: String) {
         var hexSanitized = hexString.trimmingCharacters(in: .whitespacesAndNewlines)
         hexSanitized = hexSanitized.replacingOccurrences(of: "#", with: "")
         
@@ -21,7 +21,7 @@ public extension UIColor {
         var b: CGFloat = 0.0
         var a: CGFloat = 1.0
         
-        let length = hexSanitized.characters.count
+        let length = hexSanitized.count
         
         guard Scanner(string: hexSanitized).scanHexInt32(&rgba) else {
             return nil
@@ -45,11 +45,11 @@ public extension UIColor {
         self.init(red: r, green: g, blue: b, alpha: a)
     }
     
-    public convenience init(hex:Int) {
+    convenience init(hex:Int) {
         self.init(hex:hex, alpha:1.0)
     }
     
-    public convenience init(hex:Int, alpha:CGFloat) {
+    convenience init(hex:Int, alpha:CGFloat) {
         let red   = CGFloat((0xff0000 & hex) >> 16) / 255.0
         let green = CGFloat((0xff00   & hex) >> 8)  / 255.0
         let blue  = CGFloat(0xff      & hex)        / 255.0

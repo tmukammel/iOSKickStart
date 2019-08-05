@@ -12,7 +12,7 @@ import UIKit
 @IBDesignable
 public extension UIView {
     
-    @IBInspectable public var bgColorKey: String {
+    @IBInspectable var bgColorKey: String {
         set (colorKey) {
             if let color = ApplicationDesignSpecific.themeColors[colorKey] {
                 backgroundColor =  color
@@ -23,7 +23,7 @@ public extension UIView {
         }
     }
     
-    @IBInspectable public var cornerRadius: CGFloat {
+    @IBInspectable var cornerRadius: CGFloat {
         set (value) {
             layer.cornerRadius = min(bounds.height * 0.5, value)
             layer.masksToBounds = value > 0
@@ -33,7 +33,7 @@ public extension UIView {
         }
     }
     
-    @IBInspectable public var applyStandardCornerRadius: Bool {
+    @IBInspectable var applyStandardCornerRadius: Bool {
         set (shouldApply) {
             layer.cornerRadius = shouldApply ? ApplicationDesignSpecific.stadardCornerRadius : 0.0
             layer.masksToBounds = shouldApply
@@ -43,7 +43,7 @@ public extension UIView {
         }
     }
     
-    @IBInspectable public var borderWidth: CGFloat {
+    @IBInspectable var borderWidth: CGFloat {
         set (width) {
             layer.borderWidth = width
         }
@@ -52,7 +52,7 @@ public extension UIView {
         }
     }
     
-    @IBInspectable public var borderColor: UIColor? {
+    @IBInspectable var borderColor: UIColor? {
         set (color) {
             layer.borderColor = color!.cgColor
         }
@@ -61,7 +61,7 @@ public extension UIView {
         }
     }
     
-    @IBInspectable public var endEditingOnTap: Bool {
+    @IBInspectable var endEditingOnTap: Bool {
         set {
             if newValue == true {
                 prepareKeyboardDismissOnTap()
@@ -73,7 +73,7 @@ public extension UIView {
     }
     
     /// Uniform vertical gradient with comma seperated string of dual hex colors
-    @IBInspectable public var gradHexColors: String {
+    @IBInspectable var gradHexColors: String {
         set {
             let colors = newValue.components(separatedBy: ",");
             
@@ -104,8 +104,7 @@ public extension UIView {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tappedOnView))
         self.addGestureRecognizer(tapGesture)
     }
-    
-    public func tappedOnView() {
+    @objc func tappedOnView() {
         self.endEditing(true)
     }
 }

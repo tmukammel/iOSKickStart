@@ -10,7 +10,7 @@ import UIKit
 
 @IBDesignable
 public extension UILabel {
-    @IBInspectable public var localizedTextKey: String {
+    @IBInspectable var localizedTextKey: String {
         get { return "" }
         set (key) {
 //            #if TARGET_INTERFACE_BUILDER
@@ -23,7 +23,7 @@ public extension UILabel {
         }
     }
     
-    @IBInspectable public var keyTextColor: String {
+    @IBInspectable var keyTextColor: String {
         set (colorKey) {
             if let color = ApplicationDesignSpecific.themeColors[colorKey] {
                 textColor = color
@@ -34,7 +34,7 @@ public extension UILabel {
         }
     }
     
-    @IBInspectable public var fontToHeightRatio: CGFloat {
+    @IBInspectable var fontToHeightRatio: CGFloat {
         set {
             if (newValue > 0 && newValue <= 1) {
                 font = font.withSize(frame.height * newValue)

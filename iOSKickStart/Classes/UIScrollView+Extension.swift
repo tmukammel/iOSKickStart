@@ -18,13 +18,13 @@ public extension ScrollView {
     
     // MARK: - Public API
     
-    public func parentViewControllerWillAppear() {
+    func parentViewControllerWillAppear() {
         if actAsInputForm == true {
             registerForKeyboardNotifications(true);
         }
     }
     
-    public func parentViewControllerWillDisappear() {
+    func parentViewControllerWillDisappear() {
         if actAsInputForm == true {
             registerForKeyboardNotifications(false)
         }
@@ -33,7 +33,7 @@ public extension ScrollView {
     /// Checks and scrolls the active control to visible screen
     ///
     /// - Parameter control: the control to check if visible
-    public func scrollControlRectToVisible(_ control: UIControl) {
+    func scrollControlRectToVisible(_ control: UIControl) {
         var rect = bounds
         rect.size.height -= (contentInset.bottom + contentInset.top)
         
@@ -50,19 +50,19 @@ public extension ScrollView {
     private func registerForKeyboardNotifications(_ register: Bool) {
         switch register {
         case true:
-            NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: .UIKeyboardWillShow, object: nil)
+            NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
             
-            NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: .UIKeyboardWillHide, object: nil)
+            NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
             
         case false:
-            NotificationCenter.default.removeObserver(self, name: .UIKeyboardWillShow, object: nil)
-            NotificationCenter.default.removeObserver(self, name: .UIKeyboardWillHide, object: nil)
+            NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+            NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
         }
     }
     
-    final func keyboardWillShow(notification: Notification) {
+    @objc final func keyboardWillShow(notification: Notification) {
         var userInfo = notification.userInfo!
-        var keyboardFrame: CGRect = (userInfo[UIKeyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
+        var keyboardFrame: CGRect = (userInfo[UIResponder.keyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
         keyboardFrame = self.convert(keyboardFrame, from: nil)
         
         let screenSize = UIScreen.main.bounds
@@ -79,7 +79,7 @@ public extension ScrollView {
         flashScrollIndicators()
     }
     
-    final func keyboardWillHide(notification: Notification) {
+    @objc final func keyboardWillHide(notification: Notification) {
         let contentInset:UIEdgeInsets = .zero
         self.contentInset = contentInset
         scrollIndicatorInsets = contentInset

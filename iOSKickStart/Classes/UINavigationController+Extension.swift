@@ -16,11 +16,11 @@ public extension UINavigationController {
     /// Pushes a view controller onto the receiver’s stack and updates the display with cross dissolve animation kCATransitionFade.
     ///
     /// - Parameter viewController: The view controller to push onto the stack.
-    public func crossDissolveViewController(_ viewController: UIViewController) {
+    func crossDissolveViewController(_ viewController: UIViewController) {
         let transition = CATransition()
         transition.duration = 0.3
-        transition.type = kCATransitionFade
-        transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
+        transition.type = CATransitionType.fade
+        transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
         
         self.view.layer.add(transition, forKey: "")
         
@@ -36,15 +36,15 @@ public extension UINavigationController {
             - animated: Specify true to animate the transition or false if you do not want the transition to be animated.
             - animationType: Specify transition from which side
     */
-    public func pushViewController(_ viewController: UIViewController, animated: Bool, animationType: String) {
+    func pushViewController(_ viewController: UIViewController, animated: Bool, animationType: String) {
         if (animated == true) {
-            let _animationType = (animationType.isEmpty) ? kCATransitionFromRight : animationType
+            let _animationType = (animationType.isEmpty) ? CATransitionSubtype.fromRight.rawValue : animationType
             
             let transition = CATransition()
             transition.duration = 0.3
-            transition.type = kCATransitionPush
-            transition.subtype = _animationType
-            transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
+            transition.type = CATransitionType.push
+            transition.subtype = CATransitionSubtype(rawValue: _animationType)
+            transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
             
             self.view.layer.add(transition, forKey: "")
         }
@@ -57,15 +57,15 @@ public extension UINavigationController {
             - animated: Specify true to animate the transition or false if you do not want the transition to be animated.
             - animationType: Specify transition from which side
      */
-    public func popViewControllerAnimated(_ animated: Bool, animationType: String) -> UIViewController? {
+    func popViewControllerAnimated(_ animated: Bool, animationType: String) -> UIViewController? {
         if (animated == true) {
-            let _animationType = (animationType.isEmpty) ? kCATransitionFromLeft : animationType
+            let _animationType = (animationType.isEmpty) ? CATransitionSubtype.fromLeft.rawValue : animationType
             
             let transition = CATransition()
             transition.duration = 0.3
-            transition.type = kCATransitionPush
-            transition.subtype = _animationType
-            transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
+            transition.type = CATransitionType.push
+            transition.subtype = CATransitionSubtype(rawValue: _animationType)
+            transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
             
             self.view.layer.add(transition, forKey: "")
         }
