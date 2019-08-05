@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "NSBundle+Language.h"
 
 FOUNDATION_EXPORT double iOSKickStartVersionNumber;
 FOUNDATION_EXPORT const unsigned char iOSKickStartVersionString[];

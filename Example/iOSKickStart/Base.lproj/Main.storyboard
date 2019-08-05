@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uPv-Yb-GZd">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uPv-Yb-GZd">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,17 +18,17 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS" customClass="View" customModule="iOSKickStart">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CKy-Rw-Gpp" customClass="ScrollView" customModule="iOSKickStart">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m7a-VB-xrH" customClass="View" customModule="iOSKickStart">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="814"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="824.33333333333337"/>
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Input code" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4AM-fb-FN0" customClass="TextField" customModule="iOSKickStart">
-                                                <rect key="frame" x="8" y="260" width="359" height="46"/>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input code" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4AM-fb-FN0" customClass="TextField" customModule="iOSKickStart">
+                                                <rect key="frame" x="8" y="266.33333333333331" width="398" height="46"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="46" id="b48-7z-bJA"/>
@@ -47,13 +45,16 @@
                                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                         <color key="value" red="0.8980392157" green="0.1764705882" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="4bn-RY-xBV"/>
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Input email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jj0-UW-RHh" customClass="TextField" customModule="iOSKickStart">
-                                                <rect key="frame" x="8" y="406" width="359" height="46"/>
+                                                <rect key="frame" x="8" y="412.33333333333331" width="398" height="46"/>
                                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="46" id="tnL-jS-rY8"/>
@@ -82,7 +83,7 @@
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Input password." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="45g-Dn-D7f" customClass="TextField" customModule="iOSKickStart">
-                                                <rect key="frame" x="8" y="668" width="359" height="46"/>
+                                                <rect key="frame" x="8" y="678.33333333333337" width="398" height="46"/>
                                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="46" id="OiN-Uq-nm6"/>
@@ -113,7 +114,7 @@
                                                 </connections>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="kGR-Fn-CBg" customClass="Button" customModule="iOSKickStart">
-                                                <rect key="frame" x="89" y="100" width="197" height="60"/>
+                                                <rect key="frame" x="98.333333333333329" y="100" width="217.33333333333337" height="66.333333333333314"/>
                                                 <color key="backgroundColor" red="1" green="0.87776360539999998" blue="0.59284651359999996" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="kGR-Fn-CBg" secondAttribute="height" multiplier="105:32" id="cLq-mv-htm"/>
@@ -134,9 +135,12 @@
                                                         <real key="value" value="0.5"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="4hd-WX-Mgs" kind="show" id="CWz-or-ZxK"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This will fill label bounds." textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLW-5t-OGT" customClass="Label" customModule="iOSKickStart">
-                                                <rect key="frame" x="61.5" y="482" width="253.5" height="36"/>
+                                                <rect key="frame" x="67" y="488.33333333333331" width="280" height="39.999999999999943"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="bLW-5t-OGT" secondAttribute="height" multiplier="280:40" id="zc6-cx-hKP"/>
                                                 </constraints>
@@ -205,14 +209,59 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-259" y="36"/>
+            <point key="canvasLocation" x="20" y="36"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wzP-Q5-ORm">
+            <objects>
+                <viewController id="4hd-WX-Mgs" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Q2-Qj-8Lb"/>
+                        <viewControllerLayoutGuide type="bottom" id="uzQ-gv-Dqd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BQr-Dz-fmD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ubp-Y2-pKc">
+                                <rect key="frame" x="79" y="163" width="280" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="ey8-iB-7Gu"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.8980392157" green="0.1764705882" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ubp-Y2-pKc" firstAttribute="top" secondItem="0Q2-Qj-8Lb" secondAttribute="bottom" constant="99" id="554-cq-IdG"/>
+                            <constraint firstItem="ubp-Y2-pKc" firstAttribute="leading" secondItem="BQr-Dz-fmD" secondAttribute="leadingMargin" constant="59" id="5v9-Gd-CeY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ubp-Y2-pKc" secondAttribute="trailing" constant="35" id="wcw-5c-Gf2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PjQ-LP-vYk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="679.71014492753625" y="37.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hXw-bG-UNq">
             <objects>
                 <navigationController id="uPv-Yb-GZd" customClass="NavigationController" customModule="iOSKickStart" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vXy-xk-jT8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
