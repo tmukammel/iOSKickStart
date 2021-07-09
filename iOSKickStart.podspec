@@ -34,6 +34,7 @@ This is just a basic work. Please contribute, expand and Enjoy...
   # s.social_media_url = 'https://twitter.com/tmukammel'
 
   s.ios.deployment_target = '12.0'
+  s.swift_versions = '4.2'
 
   s.source_files = 'iOSKickStart/Classes/**/*'
   
