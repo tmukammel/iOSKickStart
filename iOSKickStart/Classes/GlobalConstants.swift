@@ -19,7 +19,7 @@ public struct ApplicationSpecific {
                 return UserDefaults.standard.bool(forKey: KeyConstants.isFirstLogin)
             }
             set {
-                UserDefaults.standard.set(isFirstLogin, forKey: KeyConstants.isFirstLogin)
+                UserDefaults.standard.set(newValue, forKey: KeyConstants.isFirstLogin)
             }
         }
     }

@@ -10,6 +10,11 @@ import UIKit
 
 @IBDesignable
 open class TextField: UITextField, UITextFieldDelegate {
+    
+}
+
+@IBDesignable
+open class CodeInputTextField: TextField {
 
     private var codeLength: Int?
     private var codePlaceHolder: Character?
@@ -55,7 +60,7 @@ open class TextField: UITextField, UITextFieldDelegate {
     /// - Returns: should change character.
     open func observeCodeInput(shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
-        print("Location: \(range.location), Length: \(range.length), String: \(string)");
+//        print("Location: \(range.location), Length: \(range.length), String: \(string)");
         
         guard let length = codeLength, let code = codePlaceHolder,
             range.location + string.count <= length else {

@@ -1,11 +1,12 @@
 # iOSKickStart
 
-[![CI Status](http://img.shields.io/travis/tmukammel/iOSKickStart.svg?style=flat)](https://travis-ci.org/tmukammel/iOSKickStart)
+A set of extended UIKit features to kickstart any iOS project.
+
 [![Version](https://img.shields.io/cocoapods/v/iOSKickStart.svg?style=flat)](http://cocoapods.org/pods/iOSKickStart)
 [![License](https://img.shields.io/cocoapods/l/iOSKickStart.svg?style=flat)](http://cocoapods.org/pods/iOSKickStart)
 [![Platform](https://img.shields.io/cocoapods/p/iOSKickStart.svg?style=flat)](http://cocoapods.org/pods/iOSKickStart)
 
-## Example
+## Example Project
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
@@ -35,7 +36,7 @@ A beautiful project template to kick start any iOS project. The target is to avo
 
 #### 10. UITextField left/right padding
 
-<img src="https://dl.dropboxusercontent.com/s/u7ujzhkegwovw23/textFieldCustomClass.png?dl=0" />	<img src="https://dl.dropboxusercontent.com/s/hn4yf7g3t31ed65/leftRightPadding.png?dl=0" />
+<img src="https://dl.dropboxusercontent.com/s/u7ujzhkegwovw23/textFieldCustomClass.png?dl=0" /> <img src="https://dl.dropboxusercontent.com/s/hn4yf7g3t31ed65/leftRightPadding.png?dl=0" />
 
 OR
 
@@ -46,7 +47,7 @@ textField.rightPadding = 8.0
 
 #### 11. UIButton adoptive font size
 
-<img src="https://dl.dropboxusercontent.com/s/cet4cjctq2ba1xa/buttonCustomClass.png?dl=0" />	<img src="https://dl.dropboxusercontent.com/s/mqpgilyfet1d1ms/adoptiveButtonFont.png?dl=0" />
+<img src="https://dl.dropboxusercontent.com/s/cet4cjctq2ba1xa/buttonCustomClass.png?dl=0" /> <img src="https://dl.dropboxusercontent.com/s/mqpgilyfet1d1ms/adoptiveButtonFont.png?dl=0" />
 
 OR
 
@@ -59,10 +60,12 @@ button.adjustFontSize = true
 #### 12. Code input TextField
 
 ##### Demo:
+
 <img src="https://dl.dropboxusercontent.com/s/mmk8vppaf8jdp5a/codeTextField.png?dl=0" />
 
 ##### Implementation:
-<img src="https://dl.dropboxusercontent.com/s/u7ujzhkegwovw23/textFieldCustomClass.png?dl=0" />	<img src="https://dl.dropboxusercontent.com/s/ircwuxlqtt091no/codeInputTextField.png?dl=0" />
+
+<img src="https://dl.dropboxusercontent.com/s/u7ujzhkegwovw23/textFieldCustomClass.png?dl=0" /> <img src="https://dl.dropboxusercontent.com/s/ircwuxlqtt091no/codeInputTextField.png?dl=0" />
 
 OR
 
@@ -91,7 +94,7 @@ func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange
 
 #### 13. UILabel bounds.height to font size ratio
 
-<img src="https://dl.dropboxusercontent.com/s/mr4luizt1n4zgxy/labelCustomClass.png?dl=0" />	<img src="https://dl.dropboxusercontent.com/s/fhpt9tm61enm4et/labelFontToHeightRatio.png?dl=0" />
+<img src="https://dl.dropboxusercontent.com/s/mr4luizt1n4zgxy/labelCustomClass.png?dl=0" /> <img src="https://dl.dropboxusercontent.com/s/fhpt9tm61enm4et/labelFontToHeightRatio.png?dl=0" />
 
 OR
 

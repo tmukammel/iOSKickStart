@@ -1,5 +1,5 @@
 PODS:
-  - iOSKickStart (0.2.2)
+  - iOSKickStart (0.2.3)
 
 DEPENDENCIES:
   - iOSKickStart (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  iOSKickStart: 77fbfb773624bcc39e3b2dbdd45565f1f9c8b3ee
+  iOSKickStart: a9d8897ddce65b0886522e8ab1bb76ef3523ea80
 
 PODFILE CHECKSUM: d9d8bbcb1ed485dea43a1deada1eba8c99549d37
 
-COCOAPODS: 1.7.0
+COCOAPODS: 1.10.1

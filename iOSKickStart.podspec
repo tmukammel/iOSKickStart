@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'iOSKickStart'
-  s.version          = '0.2.3'
-  s.summary          = 'Set of extended standard features to kickstart any iOS project.'
+  s.version          = '0.2.4'
+  s.summary          = 'A set of extended UIKit features to kickstart any iOS project.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -33,7 +33,7 @@ This is just a basic work. Please contribute, expand and Enjoy...
   s.source           = { :git => 'https://github.com/tmukammel/iOSKickStart.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/tmukammel'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '12.0'
 
   s.source_files = 'iOSKickStart/Classes/**/*'
   

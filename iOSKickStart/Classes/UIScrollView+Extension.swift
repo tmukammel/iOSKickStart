@@ -61,8 +61,8 @@ public extension ScrollView {
     }
     
     @objc final func keyboardWillShow(notification: Notification) {
-        var userInfo = notification.userInfo!
-        var keyboardFrame: CGRect = (userInfo[UIResponder.keyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
+        let userInfo = notification.userInfo!
+        var keyboardFrame: CGRect = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
         keyboardFrame = self.convert(keyboardFrame, from: nil)
         
         let screenSize = UIScreen.main.bounds
@@ -80,7 +80,7 @@ public extension ScrollView {
     }
     
     @objc final func keyboardWillHide(notification: Notification) {
-        let contentInset:UIEdgeInsets = .zero
+        let contentInset: UIEdgeInsets = .zero
         self.contentInset = contentInset
         scrollIndicatorInsets = contentInset
     }
