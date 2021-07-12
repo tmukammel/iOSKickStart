@@ -2,7 +2,7 @@
 
 A set of extended UIKit features to kickstart any iOS project.
 
-[![GitHub latest stable releases](https://badgen.net/github/release/tmukammel/iOSKickStart/stable)](https://github.com/tmukammel/iOSKickStart/releases/latest)
+[![GitHub latest stable releases](https://img.shields.io/github/v/release/tmukammel/iOSKickStart)](https://github.com/tmukammel/iOSKickStart/releases/latest)
 [![GitHub forks](https://img.shields.io/github/forks/tmukammel/iOSKickStart)](https://github.com/tmukammel/iOSKickStart/network/members)
 [![GitHub stars](https://img.shields.io/github/stars/tmukammel/iOSKickStart)](https://github.com/tmukammel/iOSKickStart/stargazers)
 [![GitHub issues](https://img.shields.io/github/issues/tmukammel/iOSKickStart)](https://github.com/tmukammel/iOSKickStart/issues)
