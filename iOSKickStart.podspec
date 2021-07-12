@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'iOSKickStart'
-  s.version          = '0.2.4'
+  s.version          = '1.0'
   s.summary          = 'A set of extended UIKit features to kickstart any iOS project.'
 
 # This description is used to generate tags and improve search results.

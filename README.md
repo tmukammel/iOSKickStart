@@ -2,9 +2,16 @@
 
 A set of extended UIKit features to kickstart any iOS project.
 
+[![GitHub latest stable releases](https://badgen.net/github/release/tmukammel/iOSKickStart/stable)](https://github.com/tmukammel/iOSKickStart/releases/latest)
+[![GitHub forks](https://img.shields.io/github/forks/tmukammel/iOSKickStart)](https://github.com/tmukammel/iOSKickStart/network/members)
+[![GitHub stars](https://img.shields.io/github/stars/tmukammel/iOSKickStart)](https://github.com/tmukammel/iOSKickStart/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/tmukammel/iOSKickStart)](https://github.com/tmukammel/iOSKickStart/issues)
+
 [![Version](https://img.shields.io/cocoapods/v/iOSKickStart.svg?style=flat)](http://cocoapods.org/pods/iOSKickStart)
 [![License](https://img.shields.io/cocoapods/l/iOSKickStart.svg?style=flat)](http://cocoapods.org/pods/iOSKickStart)
 [![Platform](https://img.shields.io/cocoapods/p/iOSKickStart.svg?style=flat)](http://cocoapods.org/pods/iOSKickStart)
+
+[![Twitter share](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2Ftmukammel%2FiOSKickStart)](http://www.twitter.com/share?url=https://github.com/tmukammel/iOSKickStart)
 
 ## Example Project
 
