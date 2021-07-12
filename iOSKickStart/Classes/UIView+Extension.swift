@@ -35,11 +35,25 @@ public extension UIView {
     
     @IBInspectable var applyStandardCornerRadius: Bool {
         set (shouldApply) {
-            layer.cornerRadius = shouldApply ? ApplicationDesignSpecific.stadardCornerRadius : 0.0
-            layer.masksToBounds = shouldApply
+            if (shouldApply == true) {
+                layer.cornerRadius = ApplicationDesignSpecific.stadardCornerRadius
+                layer.masksToBounds = shouldApply
+            }
         }
         get {
             return layer.cornerRadius > 0.0 ? true : false
+        }
+    }
+    
+    @IBInspectable var makeRoundedCorners: Bool {
+        set (shouldMake) {
+            if (shouldMake == true) {
+                layer.cornerRadius = bounds.height * 0.5
+                layer.masksToBounds = shouldMake
+            }
+        }
+        get {
+            return layer.cornerRadius >= bounds.height * 0.5 ? true : false
         }
     }
     

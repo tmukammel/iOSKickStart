@@ -1,0 +1,15 @@
+
+/* Class = "UITextField"; placeholder = "Input password."; ObjectID = "45g-Dn-D7f"; */
+"45g-Dn-D7f.placeholder" = "Input password.";
+
+/* Class = "UITextField"; placeholder = "Input code"; ObjectID = "4AM-fb-FN0"; */
+"4AM-fb-FN0.placeholder" = "Input code";
+
+/* Class = "UITextField"; placeholder = "Input email"; ObjectID = "Jj0-UW-RHh"; */
+"Jj0-UW-RHh.placeholder" = "Input email";
+
+/* Class = "UILabel"; text = "This will fill label bounds."; ObjectID = "bLW-5t-OGT"; */
+"bLW-5t-OGT.text" = "This will fill label bounds.";
+
+/* Class = "UIButton"; normalTitle = "Button Is This"; ObjectID = "kGR-Fn-CBg"; */
+"kGR-Fn-CBg.normalTitle" = "Button Is This";

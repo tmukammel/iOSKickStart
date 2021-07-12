@@ -1,0 +1,29 @@
+/* 
+  Localizable.strings
+  iOSKickStart
+
+  Created by Twaha Mukammel on 9/7/21.
+  Copyright © 2021 CocoaPods. All rights reserved.
+*/
+
+"vcRootTitle" = "Features & Implementations";
+"btnCheck" = "Check";
+"btnForceReload" = "Force reload";
+"btnTitle" = "Adaptive font size Button";
+"lblLocaleText" = "English written";
+"txtLocalePlaceholder" = "Write some English";
+"btnLocaleTitle" = "English button";
+"vcLocaleTitle" = "English Title";
+"vcNoUpdateUntilReloadTitle" = "No update until reload";
+
+// UserInputFormViewController
+
+"lblName" = "Name";
+"tfName.placeholder" = "Enter your name";
+"lblEmail" = "Email";
+"tfEmail.placeholder" = "Enter your email";
+"lblAddress" = "Address";
+"tfAddress.placeholder" = "Enter your address";
+"lblPassword" = "Password";
+"tfPassword.placeholder" = "Enter your password";
+"lblCode" = "Code";

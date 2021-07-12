@@ -10,6 +10,7 @@
 #import <objc/runtime.h>
 
 static const char associatedLanguageBundle = 0;
+static NSString* currentLanguage = @"en";
 
 @interface PrivateBundle : NSBundle
 @end
@@ -45,6 +46,11 @@ static const char associatedLanguageBundle = 0;
                              &associatedLanguageBundle,
                              language ? [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:language ofType:@"lproj"]] : nil,
                              OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    currentLanguage = language ? language: @"en";
+}
+
++ (NSString *)getLanguage {
+    return currentLanguage;
 }
 
 @end

@@ -16,36 +16,211 @@ A beautiful project template to kick start any iOS project. The target is to avo
 
 ## Features & Implementations
 
-#### 1. Cross dissolve and reverse push pop navigation.
+### 1. Localization
 
-#### 2. UIColor init with hex value.
+#### **(a)** Set Language
 
-#### 3. UIView corner-radius and colored-border IBInspectables.
-
-#### 4. Text localization with key string from interface builder.
-
-#### 5. Define once use everywhere global constants.
-
-#### 6. NavigationController isNavBarHidden IBInspectable.
-
-#### 7. Scrollview actAsInputForm IBInspectable.
-
-#### 8. Dismiss keyboard on tap with enabling UIView extension var endEditingOnTap IBInspectable.
-
-#### 9. Default keyboard config enum in interfacebuilder to choose easily and avoid keyboard config mistakes.
-
-#### 10. UITextField left/right padding
-
-<img src="https://dl.dropboxusercontent.com/s/u7ujzhkegwovw23/textFieldCustomClass.png?dl=0" /> <img src="https://dl.dropboxusercontent.com/s/hn4yf7g3t31ed65/leftRightPadding.png?dl=0" />
-
-OR
+> **(1)** Set and Switch application locale programmetically.
 
 ```swift
-textField.leftPadding = 8.0
-textField.rightPadding = 8.0
+// Bundle.setLanguage(language: String!)
+Bundle.setLanguage("bn")
 ```
 
-#### 11. UIButton adoptive font size
+> **(2)** Get application locale programmetically.
+
+```swift
+// Bundle.getLanguage()
+let currentLanguage = Bundle.getLanguage()
+```
+
+> **(3)** Update current view with changed locale.
+
+> > You will have to reload `Main` storyboard
+
+> > or,  
+> > Reload current viewing `ViewController`
+
+```swift
+func forceReload() {
+    let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+    let destVC = storyBoard.instantiateViewController(withIdentifier: <"ViewControllerIdentifier">) as! <ViewControllerClass>
+    let navC = self.navigationController;
+    navC?.popToRootViewController(animated: true)
+    navC?.pushViewController(destVC, animated: true)
+}
+```
+
+#### **(b)** Localization from storyboard
+
+> With Localizable.strings (Locale) key sting into interface builder.
+
+> **(1)** UILabel
+>
+> > `.localizedTextKey = <localizableKey>`
+
+> **(2)** UITextField
+>
+> > `.localizedPlaceholderKey = <localizableKey>`
+
+> **(3)** UIBUtton
+>
+> > `.localizedTitleKey = <localizableKey>`
+
+> **(4)** UITabBarItem
+>
+> > `.localizedTitleKey = <localizableKey>`
+
+> **(5)** UIViewController.title
+>
+> > `.localizedTitleKey = <localizableKey>`
+
+### 2. User intput form (Scrollview)
+
+#### **(a)** Label bounds.height to font ratio
+
+> `fontToHeightRatio = <fractionLessThanZero>`
+
+#### **(b)** TextField left, right padding
+
+> `textField.leftPadding = <paddingInPoints>`  
+> `textField.rightPadding = <paddingInPoints>`
+
+#### **(c)** Keyboard configuration
+
+> Default keyboard config enum in interfacebuilder to choose easily and avoid keyboard config mistakes.
+
+> Configuration options
+
+```swift
+private enum TextFieldKeyboardConfig: String {
+    case email
+    case name
+    case password
+    case comment
+}
+```
+
+> To set keyboard configuration
+>
+> > `keyboardConfig = <option>`
+
+#### **(d)** CodeInputTextField Code input
+
+> **(1)** Set length and code placeholder  
+> `codeLengthAndChar = <length,placeholder>`
+>
+> > e.g: `codeLengthAndChar = "6,●"`
+
+> **(2)** Implement UITextFieldDelegate
+
+```swift
+// MARK: - UITextFieldDelegate
+
+func textFieldDidBeginEditing(_ textField: UITextField) {
+    if let textFld = (textField as? CodeInputTextField) {
+        textFld.observeCodeInputDidBegin()
+    }
+}
+
+func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+    // Code ...
+
+    if let textFld = (textField as? CodeInputTextField) {
+        return textFld.observeCodeInput(shouldChangeCharactersIn: range, replacementString: string)
+    }
+
+    return true
+}
+```
+
+> > This is how it looks
+>
+> > > <img src="https://dl.dropboxusercontent.com/s/mmk8vppaf8jdp5a/codeTextField.png?dl=0" />
+
+#### **(e)** Input form scrollview behavior
+
+> **Step 01**
+
+> To make scrollview to act as an input form  
+> Set `scrollview` user defined runtime attributes
+
+```swift
+// User defined runtime attributes
+actAsInputForm = true
+```
+
+> To dismiss keyboard on tap  
+> Set `scrollview.view` (view under scrollview on wich the form fields resided) user defined runtime attributes
+
+```swift
+// User defined runtime attributes
+endEditingOnTap = true
+```
+
+> **Step 02**
+
+> Send actions to scrollview
+
+```swift
+@IBOutlet weak var scrollView: ScrollView!
+
+override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+
+    scrollView.parentViewControllerWillAppear()
+}
+
+override func viewWillDisappear(_ animated: Bool) {
+    super.viewWillDisappear(animated)
+
+    scrollView.parentViewControllerWillDisappear()
+}
+
+// MARK: - UITextFieldDelegate
+
+func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+    scrollView.scrollControlRectToVisible(textField)
+
+    return true
+}
+```
+
+### 2. UINavigationController
+
+#### UINavigationController+Extension
+
+isNavBarHidden IBInspectable.
+
+### 5. Define once use everywhere global constants.
+
+### 1. Navigation: Cross dissolve and reverse push pop
+
+### 2. UIColor init with hex value.
+
+### 3. UIView corner-radius and colored-border IBInspectables.
+
+#### UIView+Extension
+
+> bgColorKey
+> cornerRadius
+> applyStandardCornerRadius
+> makeRoundedCorners
+> borderWidth
+> borderColor
+> endEditingOnTap
+> gradHexColors
+
+### 11. UIBUtton+Extension
+
+> localizedTitleKey  
+> keyNormalTxtColor  
+> keyDisabledTxtColor  
+> UIButton adoptive font size
+>
+> > fontToHeightRatio  
+> > numberOfLines  
+> > adjustFontSize `// adjustsFontSizeToFitWidth`
 
 <img src="https://dl.dropboxusercontent.com/s/cet4cjctq2ba1xa/buttonCustomClass.png?dl=0" /> <img src="https://dl.dropboxusercontent.com/s/mqpgilyfet1d1ms/adoptiveButtonFont.png?dl=0" />
 
@@ -57,42 +232,7 @@ button.numberOfLines = 1
 button.adjustFontSize = true
 ```
 
-#### 12. Code input TextField
-
-##### Demo:
-
-<img src="https://dl.dropboxusercontent.com/s/mmk8vppaf8jdp5a/codeTextField.png?dl=0" />
-
-##### Implementation:
-
-<img src="https://dl.dropboxusercontent.com/s/u7ujzhkegwovw23/textFieldCustomClass.png?dl=0" /> <img src="https://dl.dropboxusercontent.com/s/ircwuxlqtt091no/codeInputTextField.png?dl=0" />
-
-OR
-
-```swift
-textField.codeLengthAndChar = "4,●"
-```
-
-AND
-
-```swift
-// MARK: - UITextFieldDelegate
-
-func textFieldDidBeginEditing(_ textField: UITextField) {
-    if let textFld = (textField as? TextField), let _ = textFld.codeLength {
-        textFld.observeCodeInputDidBegin()
-    }
-}
-
-func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-    if let textFld = (textField as? TextField), let _ = textFld.codeLength {
-        return textFld.observeCodeInput(shouldChangeCharactersIn: range, replacementString: string)
-    }
-    return true
-}
-```
-
-#### 13. UILabel bounds.height to font size ratio
+### 13. UILabel bounds.height to font size ratio
 
 <img src="https://dl.dropboxusercontent.com/s/mr4luizt1n4zgxy/labelCustomClass.png?dl=0" /> <img src="https://dl.dropboxusercontent.com/s/fhpt9tm61enm4et/labelFontToHeightRatio.png?dl=0" />
 
@@ -102,7 +242,7 @@ OR
 label.fontToHeightRatio = 0.6
 ```
 
-#### 14. UIViewController titleImage IBInspectable
+### 14. UIViewController titleImage IBInspectable
 
 <img src="https://dl.dropboxusercontent.com/s/24rs0dnadfzwv6m/ViewControllerTitleImage.png?dl=0" />
 
