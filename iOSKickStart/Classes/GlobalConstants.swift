@@ -40,8 +40,11 @@ public struct ApplicationDesignSpecific {
     // Corner radius
     public var stadardCornerRadius: CGFloat = 7.0
     
-    // Theme color
-    public var themeColors: ThemeColors = ThemeColors()
+    // Theme colors
+    public var colors = Colors()
+    
+    //Theme fonts
+    public var fonts = Fonts()
     
 //    1BB3CE - close to toretan
     
@@ -75,7 +78,7 @@ public struct ApplicationDesignSpecific {
     ]
     
     // theme color collection
-    public struct ThemeColors {
+    public struct Colors {
         public var mainThemeColor: UIColor?
         public var mainNavBarColor: UIColor?
         public var mainButtonColor: UIColor?
@@ -85,7 +88,7 @@ public struct ApplicationDesignSpecific {
         public var textFieldBGColor: UIColor?
     }
     
-    // theme fonts collection
+    // fonts collection
     public struct Fonts {
         public var primaryNormal: UIFont?
         public var primaryBold: UIFont?
