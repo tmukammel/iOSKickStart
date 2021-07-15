@@ -27,6 +27,16 @@ public struct ApplicationSpecific {
 
 public struct ApplicationDesignSpecific {
     
+    private static let shared: ApplicationDesignSpecific?
+    
+    public static func getInstance(): ApplicationDesignSpecific? {
+        if shared == nil {
+            shared = ApplicationDesignSpecific()
+        }
+        
+        return shared
+    }
+    
 //    1BB3CE - close to toretan
     
 //    1BB39A - close to ejabberd
