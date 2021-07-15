@@ -27,9 +27,9 @@ public struct ApplicationSpecific {
 
 public struct ApplicationDesignSpecific {
     
-    private static let shared: ApplicationDesignSpecific?
+    private static var shared: ApplicationDesignSpecific?
     
-    public static func getInstance(): ApplicationDesignSpecific? {
+    public static func getInstance()-> ApplicationDesignSpecific? {
         if shared == nil {
             shared = ApplicationDesignSpecific()
         }
@@ -74,7 +74,8 @@ public struct ApplicationDesignSpecific {
         "TextFieldBGColor"      : UIColor.white
     ]
     
-    private class ThemeColors {
+    // theme color collection
+    public struct ThemeColors {
         public var mainThemeColor: UIColor?
         public var mainNavBarColor: UIColor?
         public var mainButtonColor: UIColor?
@@ -82,6 +83,13 @@ public struct ApplicationDesignSpecific {
         public var disabledTextColor: UIColor?
         public var whiteTransparentColor: UIColor?
         public var textFieldBGColor: UIColor?
+    }
+    
+    // theme fonts collection
+    public struct Fonts {
+        public var primaryNormal: UIFont?
+        public var primaryBold: UIFont?
+        public var primarySemibold: UIFont?
     }
 }
 
