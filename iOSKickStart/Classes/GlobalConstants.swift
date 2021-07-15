@@ -37,6 +37,12 @@ public struct ApplicationDesignSpecific {
         return shared
     }
     
+    // Corner radius
+    public var stadardCornerRadius: CGFloat = 7.0
+    
+    // Theme color
+    public var themeColors: ThemeColors = ThemeColors()
+    
 //    1BB3CE - close to toretan
     
 //    1BB39A - close to ejabberd
@@ -68,7 +74,15 @@ public struct ApplicationDesignSpecific {
         "TextFieldBGColor"      : UIColor.white
     ]
     
-    public static let stadardCornerRadius: CGFloat = 7.0
+    private class ThemeColors {
+        public var mainThemeColor: UIColor?
+        public var mainNavBarColor: UIColor?
+        public var mainButtonColor: UIColor?
+        public var mainTextColor: UIColor?
+        public var disabledTextColor: UIColor?
+        public var whiteTransparentColor: UIColor?
+        public var textFieldBGColor: UIColor?
+    }
 }
 
 public struct UserSpecific {
