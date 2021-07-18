@@ -576,10 +576,11 @@ localizedTitleKey = txtText</string>
                             <constraint firstAttribute="trailing" secondItem="CKy-Rw-Gpp" secondAttribute="trailing" id="fMH-xT-1z3"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="chg-Ej-agL"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="image" keyPath="titleImage" value="musical"/>
-                    </userDefinedRuntimeAttributes>
+                    <navigationItem key="navigationItem" id="chg-Ej-agL">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="image" keyPath="imageTitle" value="musical"/>
+                        </userDefinedRuntimeAttributes>
+                    </navigationItem>
                     <connections>
                         <outlet property="scrollView" destination="CKy-Rw-Gpp" id="hFM-jY-HRO"/>
                     </connections>
