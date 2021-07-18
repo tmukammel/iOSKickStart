@@ -11,6 +11,8 @@
 		0817E76382742970EE06CB66402469F3 /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BA75CC23D60F9963CEF547D7EED876 /* NSBundle+Language.m */; };
 		13B1C8636D63829DC7FD6420A2511661 /* CrossDissolveSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E4A27686A870C75769606CDFB75CC /* CrossDissolveSegue.swift */; };
 		281012A6D91530596DD9364E6B1E976E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		2974AA3C26A436F800BE9A91 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2974AA3B26A436F800BE9A91 /* AppTheme.swift */; };
+		2974AA3E26A4380E00BE9A91 /* ServerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2974AA3D26A4380E00BE9A91 /* ServerConfig.swift */; };
 		2992FE0826A0CF920022F48D /* UINavigationBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2992FE0726A0CF920022F48D /* UINavigationBar+Extension.swift */; };
 		2992FE0A26A0D0BC0022F48D /* UITableViewCel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2992FE0926A0D0BC0022F48D /* UITableViewCel+Extension.swift */; };
 		2AB7AE327DA6EE86F06C5275569B31B0 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087FF00C6EC92E7CF0BE6B444EC927B2 /* UIView+Extension.swift */; };
@@ -74,6 +76,8 @@
 		1EC274CA28ECFE3C5E95BD7AFE6E2FCF /* Pods-iOSKickStart_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOSKickStart_Example.release.xcconfig"; sourceTree = "<group>"; };
 		254EE93E5DCC73FBB5430CD0D6AB9FA2 /* iOSKickStart-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iOSKickStart-prefix.pch"; sourceTree = "<group>"; };
 		27C862C92CBEBACD28ED8665F757D165 /* Pods-iOSKickStart_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iOSKickStart_Tests.modulemap"; sourceTree = "<group>"; };
+		2974AA3B26A436F800BE9A91 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		2974AA3D26A4380E00BE9A91 /* ServerConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerConfig.swift; sourceTree = "<group>"; };
 		2992FE0726A0CF920022F48D /* UINavigationBar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Extension.swift"; sourceTree = "<group>"; };
 		2992FE0926A0D0BC0022F48D /* UITableViewCel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCel+Extension.swift"; sourceTree = "<group>"; };
 		32712B3A19A803A9A45F46FF50398C1F /* iOSKickStart.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = iOSKickStart.podspec; sourceTree = "<group>"; tabWidth = 2; };
@@ -167,6 +171,15 @@
 			path = "Example/Pods/Target Support Files/iOSKickStart";
 			sourceTree = "<group>";
 		};
+		2974AA3A26A436E700BE9A91 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				2974AA3B26A436F800BE9A91 /* AppTheme.swift */,
+				2974AA3D26A4380E00BE9A91 /* ServerConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		327D51651468A1AE58B6FF32411942EA /* Pod */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +210,7 @@
 		8C4D392876B5B0CA1BE33303A22DE5A2 /* iOSKickStart */ = {
 			isa = PBXGroup;
 			children = (
+				2974AA3A26A436E700BE9A91 /* Config */,
 				48C16D8CA60950D4C5D2AFF9AF613625 /* Button.swift */,
 				419E4A27686A870C75769606CDFB75CC /* CrossDissolveSegue.swift */,
 				72B391C168B74CCCF96EB66C8CA1CB16 /* GlobalConstants.swift */,
@@ -483,7 +497,9 @@
 				BAE420DE4681FED2A2E7F7F03EC7001D /* UILabel+Extension.swift in Sources */,
 				C1D4C7363954D99A3C9CC0AFAF4E5C47 /* UINavigationController+Extension.swift in Sources */,
 				2C72C06F827B48C9773B51F592AF4D1C /* UIProgressView+Extension.swift in Sources */,
+				2974AA3C26A436F800BE9A91 /* AppTheme.swift in Sources */,
 				C9CD95B287E11A2062DBA328B1381E48 /* UIScrollView+Extension.swift in Sources */,
+				2974AA3E26A4380E00BE9A91 /* ServerConfig.swift in Sources */,
 				DD3D318036D5992AED770EC3470B373D /* UITextField+Extension.swift in Sources */,
 				2AB7AE327DA6EE86F06C5275569B31B0 /* UIView+Extension.swift in Sources */,
 				96D57FDCD871D8B2C1A5F96156DAFBAA /* UIViewController+Extension.swift in Sources */,
