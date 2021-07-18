@@ -9,8 +9,8 @@ import Foundation
 
 
 public enum ThemeType{
-     case NORMAL
-     case DARK
+    case NORMAL
+    case DARK
 }
 
 // theme color collection
@@ -32,45 +32,45 @@ public class Fonts {
 }
 
 public class AppTheme {
-   private var builder: Builder
-
-   init(builder: Builder) {
-      self.builder = builder
-   }
-
-  func getColors(colors: Colors) -> Colors{
-       return self.builder.colors
-   }
-
-    func getFonts(colors: Colors) -> Fonts{
-       return self.builder.fonts
-   }
-
-//    func getStyle(style: Style) -> Style{
-//       return self.builder.style
-//   }
-
+    private var builder: Builder
+    
+    init(builder: Builder) {
+        self.builder = builder
+    }
+    
+    public func getColors(colors: Colors) -> Colors{ 
+        return self.builder.colors
+    }
+    
+    public func getFonts(colors: Colors) -> Fonts{
+        return self.builder.fonts
+    }
+    
+    //    func getStyle(style: Style) -> Style{
+    //       return self.builder.style
+    //   }
+    
     public class Builder{
         var colors: Colors!
         var fonts: Fonts!
-//        var style: style!
-
-        func addColors(colors: Colors) -> Builder{
-             self.colors = colors
-             return self
-          }
-
-        func addFonts(fonts: Fonts) -> Builder{
-             self.fonts = fonts
-             return self
-          }
-
-//        func addStyle(style: Style) -> Builder{
-//             self.style = style
-//         }
-
-        func build() -> AppTheme {
+        //        var style: style!
+        
+        public func addColors(colors: Colors) -> Builder{
+            self.colors = colors
+            return self
+        }
+        
+        public func addFonts(fonts: Fonts) -> Builder{
+            self.fonts = fonts
+            return self
+        }
+        
+        //        func addStyle(style: Style) -> Builder{
+        //             self.style = style
+        //         }
+        
+        public func build() -> AppTheme {
             return AppTheme(builder: self)
-         }
-     }
+        }
+    }
 }

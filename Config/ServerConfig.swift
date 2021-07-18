@@ -8,47 +8,68 @@
 import Foundation
 
 
+public class AuthCredential{
+    public var username: String?
+    public var password: String?
+    public var token: String?
+    
+    init() {
+        
+    }
+    
+    init(username: String, password: String) {
+        self.username = username
+        self.password = password
+    }
+    
+    init(username: String, password: String, token: String) {
+        self.username = username
+        self.password = password
+        self.token = token 
+    }
+}
+
 public class ServerConfig {
-   private var builder: Builder
-
-   init(builder: Builder) {
-      self.builder = builder
-   }
-
-   func getBaseUrl(baseUrl: String) -> String{
+    private var builder: Builder
+    
+    init(builder: Builder) {
+        self.builder = builder
+    }
+    
+    public func getBaseUrl(baseUrl: String) -> String{
         return self.builder.baseUrl
-   }
-
-    func getApiVersion() -> String{
+    }
+    
+    public func getApiVersion() -> String{
         return self.builder.apiVersion
     }
-
-//    func setAuthCredential() -> Credential{
-//        return self.builder.credential
-//    }
-
+    
+    func setAuthCredential() -> AuthCredential{
+        return self.builder.credential
+    }
+    
     public class Builder{
         var baseUrl: String!
         var apiVersion: String!
-//        var credential: Credential!
-
-        func addBaseUrl(baseUrl: String) -> Builder{
+        var credential: AuthCredential!
+        
+        public func addBaseUrl(baseUrl: String) -> Builder{
             self.baseUrl = baseUrl
             return self
         }
-
-        func addApiVersion(apiVersion: String) -> Builder{
+        
+        public func addApiVersion(apiVersion: String) -> Builder{
             self.apiVersion = apiVersion
             return self
         }
-
-//        func addAuthCredential(credential: Credential) -> Builder{
-//            self.credential = credential
-//            return  self
-//        }
-
-        func build() -> ServerConfig {
+        
+        func addAuthCredential(credential: AuthCredential) -> Builder{
+            self.credential = credential
+            return  self
+        }
+        
+        public func build() -> ServerConfig {
             return ServerConfig(builder: self)
-         }
-     }
+        }
+    }
 }
