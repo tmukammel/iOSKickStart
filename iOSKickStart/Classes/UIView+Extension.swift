@@ -36,7 +36,7 @@ public extension UIView {
     @IBInspectable var applyStandardCornerRadius: Bool {
         set (shouldApply) {
             if (shouldApply == true) {
-                layer.cornerRadius = ApplicationDesignSpecific.stadardCornerRadius
+                layer.cornerRadius = ApplicationDesignSpecific.getInstance()?.stadardCornerRadius ?? 0
                 layer.masksToBounds = shouldApply
             }
         }

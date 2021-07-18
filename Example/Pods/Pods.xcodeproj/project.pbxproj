@@ -11,6 +11,8 @@
 		0817E76382742970EE06CB66402469F3 /* NSBundle+Language.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BA75CC23D60F9963CEF547D7EED876 /* NSBundle+Language.m */; };
 		13B1C8636D63829DC7FD6420A2511661 /* CrossDissolveSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419E4A27686A870C75769606CDFB75CC /* CrossDissolveSegue.swift */; };
 		281012A6D91530596DD9364E6B1E976E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		2992FE0826A0CF920022F48D /* UINavigationBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2992FE0726A0CF920022F48D /* UINavigationBar+Extension.swift */; };
+		2992FE0A26A0D0BC0022F48D /* UITableViewCel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2992FE0926A0D0BC0022F48D /* UITableViewCel+Extension.swift */; };
 		2AB7AE327DA6EE86F06C5275569B31B0 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087FF00C6EC92E7CF0BE6B444EC927B2 /* UIView+Extension.swift */; };
 		2C72C06F827B48C9773B51F592AF4D1C /* UIProgressView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A754263C4142B15E99A05EC7E84357 /* UIProgressView+Extension.swift */; };
 		2D8A75096BE1BA0A7C0F4089E1A2EED7 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC12651367AE91F1BB2A51CBEF3E951B /* TextField.swift */; };
@@ -75,6 +77,8 @@
 		1EC274CA28ECFE3C5E95BD7AFE6E2FCF /* Pods-iOSKickStart_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOSKickStart_Example.release.xcconfig"; sourceTree = "<group>"; };
 		254EE93E5DCC73FBB5430CD0D6AB9FA2 /* iOSKickStart-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iOSKickStart-prefix.pch"; sourceTree = "<group>"; };
 		27C862C92CBEBACD28ED8665F757D165 /* Pods-iOSKickStart_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iOSKickStart_Tests.modulemap"; sourceTree = "<group>"; };
+		2992FE0726A0CF920022F48D /* UINavigationBar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Extension.swift"; sourceTree = "<group>"; };
+		2992FE0926A0D0BC0022F48D /* UITableViewCel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCel+Extension.swift"; sourceTree = "<group>"; };
 		32712B3A19A803A9A45F46FF50398C1F /* iOSKickStart.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = iOSKickStart.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		36203DDFB68CCE142FB7808C6C5BFE24 /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINavigationController+Extension.swift"; path = "iOSKickStart/Classes/UINavigationController+Extension.swift"; sourceTree = "<group>"; };
 		382D6E2D16A1DF804C95CB2D71CD31CA /* UIColor+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Extension.swift"; path = "iOSKickStart/Classes/UIColor+Extension.swift"; sourceTree = "<group>"; };
@@ -220,11 +224,13 @@
 				382D6E2D16A1DF804C95CB2D71CD31CA /* UIColor+Extension.swift */,
 				43F0BAA9BE1B904FD5F18350C2493746 /* UILabel+Extension.swift */,
 				36203DDFB68CCE142FB7808C6C5BFE24 /* UINavigationController+Extension.swift */,
+				2992FE0726A0CF920022F48D /* UINavigationBar+Extension.swift */,
 				E6A754263C4142B15E99A05EC7E84357 /* UIProgressView+Extension.swift */,
 				C8F6ABDDC13A5DA610E0047E14F3883A /* UIScrollView+Extension.swift */,
 				3F9B6AB327280373D4AEEBB1E362703F /* UITextField+Extension.swift */,
 				087FF00C6EC92E7CF0BE6B444EC927B2 /* UIView+Extension.swift */,
 				87537C801F9BA17A4BE8BD52A92752D6 /* UIViewController+Extension.swift */,
+				2992FE0926A0D0BC0022F48D /* UITableViewCel+Extension.swift */,
 				71B3CB791617D3462DD79DA298D4816C /* View.swift */,
 				656A593A150F4220479D5DCEA490600D /* ViewController.swift */,
 				327D51651468A1AE58B6FF32411942EA /* Pod */,
@@ -479,6 +485,8 @@
 				F6015EEF3B270D5C792CB59D2FF84023 /* ScrollView.swift in Sources */,
 				FAAD284C22FD05259EFA290CA0F8CBF2 /* TabBarController.swift in Sources */,
 				C6294D1F45F9194306678AD86EFF5F8C /* TabBarItem.swift in Sources */,
+				2992FE0826A0CF920022F48D /* UINavigationBar+Extension.swift in Sources */,
+				2992FE0A26A0D0BC0022F48D /* UITableViewCel+Extension.swift in Sources */,
 				2D8A75096BE1BA0A7C0F4089E1A2EED7 /* TextField.swift in Sources */,
 				E708363683F5DDC2112F1C3E17869A30 /* UIButton+Extension.swift in Sources */,
 				02B4717B35278B08E18DB9D42F1B5BC2 /* UIColor+Extension.swift in Sources */,

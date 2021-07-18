@@ -27,6 +27,25 @@ public struct ApplicationSpecific {
 
 public struct ApplicationDesignSpecific {
     
+    private static var shared: ApplicationDesignSpecific?
+    
+    public static func getInstance()-> ApplicationDesignSpecific? {
+        if shared == nil {
+            shared = ApplicationDesignSpecific()
+        }
+        
+        return shared
+    }
+    
+    // Corner radius
+    public var stadardCornerRadius: CGFloat = 7.0
+    
+    // Theme colors
+    public var colors = Colors()
+    
+    //Theme fonts
+    public var fonts = Fonts()
+    
 //    1BB3CE - close to toretan
     
 //    1BB39A - close to ejabberd
@@ -58,7 +77,23 @@ public struct ApplicationDesignSpecific {
         "TextFieldBGColor"      : UIColor.white
     ]
     
-    public static let stadardCornerRadius: CGFloat = 7.0
+    // theme color collection
+    public struct Colors {
+        public var mainThemeColor: UIColor?
+        public var mainNavBarColor: UIColor?
+        public var mainButtonColor: UIColor?
+        public var mainTextColor: UIColor?
+        public var disabledTextColor: UIColor?
+        public var whiteTransparentColor: UIColor?
+        public var textFieldBGColor: UIColor?
+    }
+    
+    // fonts collection
+    public struct Fonts {
+        public var primaryNormal: UIFont?
+        public var primaryBold: UIFont?
+        public var primarySemibold: UIFont?
+    }
 }
 
 public struct UserSpecific {
