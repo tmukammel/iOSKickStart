@@ -19,56 +19,104 @@ public class AppConfig {
         self.builder = builder
     }
     
-    func getServerConfig() -> ServerConfig {
+    public func getServerConfig() -> ServerConfig {
         return self.builder.serverConfig
     }
     
-    func getLocal() -> String {
+    public func getLocal() -> String {
         return self.builder.local
     }
     
-    func getTheme() -> AppTheme {
+    public func getTheme() -> AppTheme {
         return self.builder.theme
     }
     
-    func getStandardCornerRadius() -> CGFloat {
+    public func getThemeType() -> ThemeType {
+        return self.builder.themeType
+    }
+    
+    public func getBuildType() -> BuildType {
+        return self.builder.buildType
+    }
+    
+    public func getStandardCornerRadius() -> CGFloat {
         return self.builder.standardCornerRadius
     }
     
-    class Builder{
+    public class Builder{
         var local: String!
         var serverConfig: ServerConfig!
         var theme: AppTheme!
         var themeType: ThemeType!
+        var buildType: BuildType!
         var standardCornerRadius: CGFloat!
         
-        func setServerConfig(serverConfig: ServerConfig) -> Builder{
+        public func setServerConfig(serverConfig: ServerConfig) -> Builder{
             self.serverConfig = serverConfig
             return self
         }
         
-        func setThemeType(themeType: ThemeType) -> Builder{
+        public func setThemeType(themeType: ThemeType) -> Builder{
             self.themeType = themeType
             return self
         }
         
-        func setNormalTheme(theme: AppTheme) -> Builder{
+        public func addBuildType(buildType: BuildType) -> Builder{
+            self.buildType = buildType
+            return  self
+        }
+        
+        public func setNormalTheme(theme: AppTheme) -> Builder{
             self.theme = theme
             return self
         }
         
-        func setDarkTheme(theme: AppTheme) -> Builder{
+        public func setDarkTheme(theme: AppTheme) -> Builder{
             self.theme = theme
             return self
         }
         
-        func setLocale(local: String) -> Builder{
+        public func setLocale(local: String) -> Builder{
             self.local = local
             return self
         }
         
-        func commit() {
+        public func setStandardCornerRadius(radius: CGFloat) -> Builder{
+            self.standardCornerRadius = radius
+            return self
+        }
+        
+        public func commit() {
             AppConfig.shared.builder = self
         }
     }
 }
+
+
+
+func testAppConfig() -> Void {
+    //builder, build -> return theme
+    let theme = AppTheme.Builder()
+        .addColors(colors: Colors())
+        .addFonts(fonts: Fonts())
+        .build()
+
+    //server/api config builder
+    let serverConfig = ServerConfig.Builder()
+        .addBaseUrl(baseUrl: "")
+        .addApiVersion(apiVersion: "")
+        .addAuthCredential(credential: AuthCredential())
+        .addBuildType(buildType: .DEVELOP)
+        .build()
+
+    //Singleton with builder, commit-> no return
+    AppConfig.Builder()
+        .setServerConfig(serverConfig: serverConfig)
+        .setThemeType(themeType: .DARK)
+        .setNormalTheme(theme: theme)
+        .setDarkTheme(theme: theme)
+        .setStandardCornerRadius(radius: 1.0)
+        .setLocale(local: "")
+        .commit()
+}
+
