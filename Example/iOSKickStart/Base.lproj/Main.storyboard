@@ -576,7 +576,7 @@ localizedTitleKey = txtText</string>
                             <constraint firstAttribute="trailing" secondItem="CKy-Rw-Gpp" secondAttribute="trailing" id="fMH-xT-1z3"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="chg-Ej-agL">
+                    <navigationItem key="navigationItem" id="chg-Ej-agL" customClass="NavigationItem" customModule="iOSKickStart">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="image" keyPath="imageTitle" value="musical"/>
                         </userDefinedRuntimeAttributes>
