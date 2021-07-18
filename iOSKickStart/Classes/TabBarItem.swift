@@ -8,13 +8,6 @@
 
 import UIKit
 
-@IBDesignable
 open class TabBarItem: UITabBarItem {
-    
-    @IBInspectable var localizedTitleKey: String = "" {
-        didSet {
-            self.title = NSLocalizedString(localizedTitleKey, comment: "")
-        }
-    }
     
 }
