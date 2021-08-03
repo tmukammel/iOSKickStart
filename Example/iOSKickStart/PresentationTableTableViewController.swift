@@ -34,7 +34,7 @@ class PresentationTableTableViewController: UITableViewController {
         "Localization": ["toLocalizationViewController", "toLocalizationExamplesViewController"],
         "ScrollView": ["toUserInputFormViewController"],
         "NavigationController": ["toLocalizationViewController"],
-        "ViewController": ["toLocalizationViewController"],
+        "ViewController": ["toWKWevView"],
         "Segue": ["toLocalizationViewController"],
         "View": ["toLocalizationViewController"],
         "ImageView": ["toLocalizationViewController"],
@@ -50,7 +50,7 @@ class PresentationTableTableViewController: UITableViewController {
         "Localization": ["Set language", "Localization from storyboard"],
         "ScrollView": ["User input form"],
         "NavigationController": ["Custom Segue", "Cross Dissolve", "Reverse push-pop"],
-        "ViewController": [],
+        "ViewController": ["Web View"],
         "Segue": [],
         "View": [],
         "ImageView": [],
@@ -99,18 +99,18 @@ class PresentationTableTableViewController: UITableViewController {
         return cell
     }
      
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        
-        
-        guard let seguesInSection = self.sectionSegues[self.sections[indexPath.section]]
-        else { return }
-        
-        if indexPath.row < seguesInSection.count {
-            let segueIdentifier = seguesInSection[indexPath.row]
-            performSegue(withIdentifier: segueIdentifier, sender: self)
+        override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            tableView.deselectRow(at: indexPath, animated: true)
+            
+            
+            guard let seguesInSection = self.sectionSegues[self.sections[indexPath.section]]
+            else { return }
+            
+            if indexPath.row < seguesInSection.count {
+                let segueIdentifier = seguesInSection[indexPath.row]
+                performSegue(withIdentifier: segueIdentifier, sender: self)
+            }
         }
-    }
     
     /*
      // Override to support conditional editing of the table view.

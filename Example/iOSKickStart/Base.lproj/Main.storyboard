@@ -656,6 +656,9 @@ localizedTitleKey = txtText</string>
                         <segue destination="lYz-5z-yIA" kind="show" identifier="toLocalizationViewController" id="8wa-pM-kfY"/>
                         <segue destination="coI-2b-edg" kind="show" identifier="toLocalizationExamplesViewController" id="P6N-WW-Hok"/>
                         <segue destination="fue-db-9ZS" kind="show" identifier="toUserInputFormViewController" id="a4S-Hp-Gfi"/>
+                        <segue destination="nJa-Xo-1UU" kind="popoverPresentation" identifier="toWKWevView" popoverAnchorView="1ef-0W-PQj" id="dMT-1w-9BH">
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES"/>
+                        </segue>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EqX-EN-Ltz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1270,6 +1273,44 @@ Cgo
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9uU-Z7-P24" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="940.57971014492762" y="240.48913043478262"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="thB-KY-22I">
+            <objects>
+                <viewController id="nJa-Xo-1UU" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iQl-Ad-i40"/>
+                        <viewControllerLayoutGuide type="bottom" id="XOv-0g-wJO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ldZ-Bb-wSz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UHK-tL-JR8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="strURL" value="https://usha.ai"/>
+                                </userDefinedRuntimeAttributes>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UHK-tL-JR8" firstAttribute="top" secondItem="iQl-Ad-i40" secondAttribute="bottom" id="ZPo-W1-9ny"/>
+                            <constraint firstItem="UHK-tL-JR8" firstAttribute="leading" secondItem="ldZ-Bb-wSz" secondAttribute="leading" id="eK7-fr-9kY"/>
+                            <constraint firstAttribute="trailing" secondItem="UHK-tL-JR8" secondAttribute="trailing" id="n9v-A6-FcG"/>
+                            <constraint firstItem="XOv-0g-wJO" firstAttribute="top" secondItem="UHK-tL-JR8" secondAttribute="bottom" id="nc7-e7-db2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jNg-8c-ApG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8qQ-kI-sB1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="408.69565217391306" y="894.29347826086962"/>
         </scene>
     </scenes>
     <designables>
