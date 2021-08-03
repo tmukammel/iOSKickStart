@@ -17,6 +17,7 @@
 		52AB37B826A420D100F42369 /* NavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB37B526A420D000F42369 /* NavigationItem.swift */; };
 		52AB37B926A420D100F42369 /* UINavigationItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB37B626A420D000F42369 /* UINavigationItem+Extension.swift */; };
 		52AB37BA26A420D100F42369 /* UITabBarItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB37B726A420D000F42369 /* UITabBarItem+Extension.swift */; };
+		52E0654B26B9175400D12394 /* WKWebView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E0654A26B9175400D12394 /* WKWebView+Extension.swift */; };
 		6275C6F3BBAC42B503E79C549AFE6466 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C16D8CA60950D4C5D2AFF9AF613625 /* Button.swift */; };
 		65726980F3C8CA4E842085CB9F78814E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		657A66BCFBDEBF66EDBFF84BAA352981 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B3CB791617D3462DD79DA298D4816C /* View.swift */; };
@@ -88,6 +89,7 @@
 		52AB37B526A420D000F42369 /* NavigationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationItem.swift; path = iOSKickStart/Classes/NavigationItem.swift; sourceTree = "<group>"; };
 		52AB37B626A420D000F42369 /* UINavigationItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UINavigationItem+Extension.swift"; path = "iOSKickStart/Classes/UINavigationItem+Extension.swift"; sourceTree = "<group>"; };
 		52AB37B726A420D000F42369 /* UITabBarItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITabBarItem+Extension.swift"; path = "iOSKickStart/Classes/UITabBarItem+Extension.swift"; sourceTree = "<group>"; };
+		52E0654A26B9175400D12394 /* WKWebView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebView+Extension.swift"; sourceTree = "<group>"; };
 		5476156A2B68DAAEB9EC9BEB1398A28C /* Pods-iOSKickStart_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iOSKickStart_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		5F5FF4FEAA492C2BDC622DC95A8609C9 /* iOSKickStart-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iOSKickStart-dummy.m"; sourceTree = "<group>"; };
 		656A593A150F4220479D5DCEA490600D /* ViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = iOSKickStart/Classes/ViewController.swift; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 				3F9B6AB327280373D4AEEBB1E362703F /* UITextField+Extension.swift */,
 				087FF00C6EC92E7CF0BE6B444EC927B2 /* UIView+Extension.swift */,
 				87537C801F9BA17A4BE8BD52A92752D6 /* UIViewController+Extension.swift */,
+				52E0654A26B9175400D12394 /* WKWebView+Extension.swift */,
 				71B3CB791617D3462DD79DA298D4816C /* View.swift */,
 				656A593A150F4220479D5DCEA490600D /* ViewController.swift */,
 				327D51651468A1AE58B6FF32411942EA /* Pod */,
@@ -468,6 +471,7 @@
 				6275C6F3BBAC42B503E79C549AFE6466 /* Button.swift in Sources */,
 				13B1C8636D63829DC7FD6420A2511661 /* CrossDissolveSegue.swift in Sources */,
 				52AB37B926A420D100F42369 /* UINavigationItem+Extension.swift in Sources */,
+				52E0654B26B9175400D12394 /* WKWebView+Extension.swift in Sources */,
 				BB2228CE90554AB9A56557755DB793C0 /* GlobalConstants.swift in Sources */,
 				AF0A31D260A6B26784E50E29A7878713 /* Image.swift in Sources */,
 				CA6107EED9C9F4B8EC561B7E99A7720B /* ImageView.swift in Sources */,
