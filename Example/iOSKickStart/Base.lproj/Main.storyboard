@@ -652,7 +652,7 @@ localizedTitleKey = txtText</string>
                         <userDefinedRuntimeAttribute type="string" keyPath="localizedTitleKey" value="vcRootTitle"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="show" identifier="toTestViewController" customClass="CrossDissolveSegue" customModule="iOSKickStart" id="tsO-A5-PSf"/>
+                        <segue destination="vXZ-lx-hvc" kind="show" identifier="toTestViewController" customClass="ReversePushSegue" customModule="iOSKickStart" id="tsO-A5-PSf"/>
                         <segue destination="lYz-5z-yIA" kind="show" identifier="toLocalizationViewController" id="8wa-pM-kfY"/>
                         <segue destination="coI-2b-edg" kind="show" identifier="toLocalizationExamplesViewController" id="P6N-WW-Hok"/>
                         <segue destination="fue-db-9ZS" kind="show" identifier="toUserInputFormViewController" id="a4S-Hp-Gfi"/>
@@ -1376,7 +1376,7 @@ Cgo
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="P6N-WW-Hok"/>
+        <segue reference="KHJ-3J-Qzi"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="musical" width="25" height="25"/>

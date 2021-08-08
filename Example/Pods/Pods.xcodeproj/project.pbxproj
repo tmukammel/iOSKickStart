@@ -18,6 +18,7 @@
 		52AB37B826A420D100F42369 /* NavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB37B526A420D000F42369 /* NavigationItem.swift */; };
 		52AB37B926A420D100F42369 /* UINavigationItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB37B626A420D000F42369 /* UINavigationItem+Extension.swift */; };
 		52AB37BA26A420D100F42369 /* UITabBarItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB37B726A420D000F42369 /* UITabBarItem+Extension.swift */; };
+		52D4E75026BFC8A2000BF496 /* ReversePushSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D4E74F26BFC8A2000BF496 /* ReversePushSegue.swift */; };
 		6275C6F3BBAC42B503E79C549AFE6466 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C16D8CA60950D4C5D2AFF9AF613625 /* Button.swift */; };
 		65726980F3C8CA4E842085CB9F78814E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		657A66BCFBDEBF66EDBFF84BAA352981 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B3CB791617D3462DD79DA298D4816C /* View.swift */; };
@@ -90,6 +91,7 @@
 		52AB37B526A420D000F42369 /* NavigationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationItem.swift; path = iOSKickStart/Classes/NavigationItem.swift; sourceTree = "<group>"; };
 		52AB37B626A420D000F42369 /* UINavigationItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UINavigationItem+Extension.swift"; path = "iOSKickStart/Classes/UINavigationItem+Extension.swift"; sourceTree = "<group>"; };
 		52AB37B726A420D000F42369 /* UITabBarItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UITabBarItem+Extension.swift"; path = "iOSKickStart/Classes/UITabBarItem+Extension.swift"; sourceTree = "<group>"; };
+		52D4E74F26BFC8A2000BF496 /* ReversePushSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReversePushSegue.swift; path = iOSKickStart/Classes/ReversePushSegue.swift; sourceTree = "<group>"; };
 		5476156A2B68DAAEB9EC9BEB1398A28C /* Pods-iOSKickStart_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iOSKickStart_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		5F5FF4FEAA492C2BDC622DC95A8609C9 /* iOSKickStart-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iOSKickStart-dummy.m"; sourceTree = "<group>"; };
 		656A593A150F4220479D5DCEA490600D /* ViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = iOSKickStart/Classes/ViewController.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 			children = (
 				48C16D8CA60950D4C5D2AFF9AF613625 /* Button.swift */,
 				419E4A27686A870C75769606CDFB75CC /* CrossDissolveSegue.swift */,
+				52D4E74F26BFC8A2000BF496 /* ReversePushSegue.swift */,
 				72B391C168B74CCCF96EB66C8CA1CB16 /* GlobalConstants.swift */,
 				1825B96C0779C9760A72983C91D7A53A /* Image.swift */,
 				9A1041A4EFB534767ACFDB05A62FFE7E /* ImageView.swift */,
@@ -478,6 +481,7 @@
 				778BCE4BA64E962C37FEE44B1F76175F /* Label.swift in Sources */,
 				FC115787088FB23D87A433C3D2079273 /* NavigationController.swift in Sources */,
 				0817E76382742970EE06CB66402469F3 /* NSBundle+Language.m in Sources */,
+				52D4E75026BFC8A2000BF496 /* ReversePushSegue.swift in Sources */,
 				EBE14E89B6EDFE5259CAE84D04613752 /* ProgressView.swift in Sources */,
 				F6015EEF3B270D5C792CB59D2FF84023 /* ScrollView.swift in Sources */,
 				FAAD284C22FD05259EFA290CA0F8CBF2 /* TabBarController.swift in Sources */,
