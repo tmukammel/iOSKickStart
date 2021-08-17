@@ -655,7 +655,9 @@ localizedTitleKey = txtText</string>
                         <segue destination="vXZ-lx-hvc" kind="show" identifier="toTestViewController" customClass="ReversePushSegue" customModule="iOSKickStart" id="tsO-A5-PSf"/>
                         <segue destination="lYz-5z-yIA" kind="show" identifier="toLocalizationViewController" id="8wa-pM-kfY"/>
                         <segue destination="coI-2b-edg" kind="show" identifier="toLocalizationExamplesViewController" id="P6N-WW-Hok"/>
-                        <segue destination="fue-db-9ZS" kind="show" identifier="toUserInputFormViewController" id="a4S-Hp-Gfi"/>
+                        <segue destination="fue-db-9ZS" kind="popoverPresentation" identifier="toUserInputFormViewController" popoverAnchorView="1ef-0W-PQj" id="a4S-Hp-Gfi">
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES"/>
+                        </segue>
                         <segue destination="nJa-Xo-1UU" kind="popoverPresentation" identifier="toWKWevView" popoverAnchorView="1ef-0W-PQj" id="dMT-1w-9BH">
                             <popoverArrowDirection key="popoverArrowDirection" up="YES"/>
                         </segue>
@@ -674,11 +676,11 @@ localizedTitleKey = txtText</string>
                         <viewControllerLayoutGuide type="bottom" id="Rv4-Xv-YtL"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="IIJ-B9-cKz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xLl-6d-o0M" customClass="ScrollView" customModule="iOSKickStart">
-                                <rect key="frame" x="0.0" y="44" width="414" height="692"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4gF-de-XLM" customClass="View" customModule="iOSKickStart">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1262"/>

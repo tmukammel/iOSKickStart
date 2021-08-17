@@ -65,7 +65,10 @@ public extension ScrollView {
         var keyboardFrame: CGRect = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
         keyboardFrame = self.convert(keyboardFrame, from: nil)
         
-        let screenSize = UIScreen.main.bounds
+        // Considering superview as the UIViewController.contentView
+        guard let screenSize = self.superview?.bounds else {
+            return
+        }
         
         var contentInset = self.contentInset
         contentInset.bottom = keyboardFrame.size.height - (screenSize.height - (frame.origin.y + frame.size.height))
